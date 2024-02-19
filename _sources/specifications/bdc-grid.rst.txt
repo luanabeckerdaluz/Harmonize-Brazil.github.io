@@ -1,0 +1,91 @@
+..
+    This file is part of Brazil Data Cube Documentation.
+    Copyright 2020-2023 INPE.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
+
+
+BDC Grids
+---------
+
+
+The BDC Grid System includes three hierarchical Grids. Currently there are products using two versions of grids, but they are being reprocessed to use Grid Version 2 (V2). The size of the grid tiles varies according to the grid version, see bellow more details. The rationale behind the BDC Grid tiling system follows the concept illustrated below in :numref:`Figure %s <products:bdc-grid-seed>`.
+
+
+.. figure:: ../img/products/bdc-grid-seed.png
+    :alt: BDC Grid seed
+    :width: 720
+    :figclass: align-center
+    :name: products:bdc-grid-seed
+
+    Tile seeds for BDC Grid.
+
+
+You can obtain BDC WMS thorugh:
+
+.. code-block::
+
+    https://brazildatacube.dpi.inpe.br/bdc/geoserver/bdc_catalog/wms
+
+
+BDC Grid System (V2)
+++++++++++++++++++++
+
+BDC Grid System (V2) includes three hierarchical Grids: 105600m x 105600m (Small, SM), 211200m x 211200m (Medium, MD) and 4224400m x 4224400m (Large, LG) tiles. Each product in BDC is generated using a specific grid, depending on the spatial resolution of the data and the output image size. Sentinel-2/MSI products are generated in the SM grid, Landsat-8/OLI and CBERS-4/MUX are generated in the MD grid and CBERS-4/WFI are generated in the LG grid.
+
+The hierarchical relation between the different BDC Grids (V2) can be seen in :numref:`Figure %s <products:bdc-grid-v2>`.
+
+.. figure:: ../img/products/bdc-grid-v2.png
+    :alt: BDC Grid V2
+    :width: 720
+    :figclass: align-center
+    :name: products:bdc-grid-v2
+
+    BDC Grid V2.
+
+
+You can download the BDC Grid V2 on:
+
+- `BDC_SM (V2) <https://brazildatacube.dpi.inpe.br/bdc/geoserver/bdc_catalog/ows?service=WFS&request=GetFeature&outputFormat=shape-zip&typeName=bdc_catalog:BDC_SM_V2>`_
+
+
+- `BDC_MD (V2) <https://brazildatacube.dpi.inpe.br/bdc/geoserver/bdc_catalog/ows?service=WFS&request=GetFeature&outputFormat=shape-zip&typeName=bdc_catalog:BDC_MD_V2>`_
+
+
+- `BDC_LG (V2) <https://brazildatacube.dpi.inpe.br/bdc/geoserver/bdc_catalog/ows?service=WFS&request=GetFeature&outputFormat=shape-zip&typeName=bdc_catalog:BDC_LG_V2>`_
+
+
+Grid Generation
+~~~~~~~~~~~~~~~
+
+Tile seeds are initially positioned in a way that the center a tile in the smaller grid is with the meridian 54° west and parallel 12° south. With this initial tile seed defined, other tiles of the same corresponding sizes, always defined by Albers Equal-Area Conic plane coordinates, are automatically generated to entirely cover the cartesian plane of the reference map projection system. For each tile size, upper boundaries perfectly match lower boundaries of tiles above and left boundaries perfectly match right boundaries of tiles on the left. The remaining hierarchical levels are generated using the first grid as a reference.
+
+BDC Grid System (V1)
+++++++++++++++++++++
+
+BDC Grid System (V1) includes three hierarchical Grids: 1.5°x1°, 3°x2°, and 6°x4° tiles. Each product in BDC is generated using a specific grid, depending on the spatial resolution of the data and the output image size. Sentinel-2/MSI products are generated in the 1.5°x1° (SM) grid, Landsat-8/OLI and CBERS-4/MUX products are generated in the 3°x2° (MD) grid and CBERS-4/WFI are generated in the 6°x4° (LG) grid.
+
+The hierarchical relation between the different BDC Grids (V1) can be seen in :numref:`Figure %s <products:bdc-grid-v1>`.
+
+.. figure:: ../img/products/bdc-grid-v1.png
+    :alt: BDC Grid V1
+    :width: 720
+    :figclass: align-center
+    :name: products:bdc-grid-v1
+
+    BDC Grid V1.
+
+
+Grid Generation
+~~~~~~~~~~~~~~~
+
+Tile seeds are initially positioned in a way that their upper left corners coincide at the intersection of the equator with the meridian 54° west. With those initial tile seeds defined, other tiles of the same corresponding sizes, always defined by Albers Equal-Area Conic plane coordinates, are automatically generated to entirely cover the cartesian plane of the reference map projection system. For each tile size, upper boundaries perfectly match lower boundaries of tiles above and left boundaries perfectly match right boundaries of tiles on the left.

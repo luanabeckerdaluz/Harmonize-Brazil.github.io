@@ -1,0 +1,60 @@
+..
+    This file is part of Brazil Data Cube Documentation.
+    Copyright 2020-2023 INPE.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
+
+
+Manhã
+-----
+
+Nesse período será feita uma introdução sobre séries temporais e cubos de dado, serão apresentados os dados do projeto *Brazil Data Cube (BDC)*, bem como o portal *BDC Explorer* e serviço de coleta amostras *TerraCollect*, além de utilizar os serviços *SpatioTemporal Asset Catalog (STAC)*, *Web Time Series Service (WTSS)* e *Web Land Trajectory Service (WLTS)*, em linguagem de programação R.
+
+Os códigos para acompanhamento do curso estão disponíveis na plataforma Kaggle nos links abaixo, mas os arquivos originais são mantidos e atualizados no repositório *Code-Gallery* no github do projeto (https://github.com/brazil-data-cube/code-gallery).
+
+
+Slides
+++++++
+
+- .. figure:: ../pdf/2023-04-02-SBSR-1-BDC-Intro.pdf
+    :alt: Introdução ao projeto Brazil Data Cube
+    :width: 720
+
+- .. figure:: ../pdf/2023-04-02-SBSR-2-BDC-Products.pdf
+    :alt: Produtos de dados
+    :width: 720
+
+- .. figure:: ../pdf/2023-04-02-SBSR-3-BDC-Portal.pdf
+    :alt: BDC Explorer
+    :width: 720
+
+- .. figure:: ../pdf/2023-04-02-SBSR-4-BDC-TerraCollect.pdf
+    :alt: Terra Collect
+    :width: 720
+
+
+SpatioTemporal Asset Catalog (STAC)
++++++++++++++++++++++++++++++++++++
+
+- https://www.kaggle.com/code/brazildatacube/sbsr2023-stac-introduction
+
+Web Time Series Service (WTSS)
+++++++++++++++++++++++++++++++
+
+- https://www.kaggle.com/code/brazildatacube/sbsr2023-wtss-introduction
+- https://www.kaggle.com/code/brazildatacube/sbsr2023-wtss-examples
+- https://www.kaggle.com/code/brazildatacube/sbsr2023-wtss2
+
+Web Land Trajectory Service (WLTS)
+++++++++++++++++++++++++++++++++++
+
+- https://www.kaggle.com/code/brazildatacube/sbsr2023-wlts-introduction

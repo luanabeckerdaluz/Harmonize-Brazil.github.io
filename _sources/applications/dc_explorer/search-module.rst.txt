@@ -1,0 +1,36 @@
+..
+    This file is part of Brazil Data Cube Documentation.
+    Copyright 2020 INPE.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
+
+Search
+======
+
+.. image:: ../../img/dc-explorer/search-1.png
+    :alt: Search Component
+    :align: center
+
+Search Features
++++++++++++++++
+
+-   Choose from a set of resources to get data, between Data Cubes, Collections and Classifications (groups on the left side of the screen);
+-   Choose from a set of **collection** to get data (check boxes inside the resources);
+-   Filter the selected collections using the **location**. You can do this by drawing on the map with the select region button or by entering a location in the search field on the right tab of the location component;
+-   Filter the selected collections using the **time range** by typing the date or selecting the date from the calendar;
+
+Additional Features
++++++++++++++++++++
+
+-   You can see the **full name** of a collection by hovering mouse over the collection name;
+-   When selecting a collection, clicking on the switcher, the **time range** fields will be filled (You can change it);
+-   Select Date by typing the date or selecting the date from the calendar;
