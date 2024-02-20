@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020-2023 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024-2023 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -16,29 +16,29 @@
 
 .. _processing_flow:
 
-BDC Processing Flow
+Harmonize Brazil Processing Flow
 -------------------
 
 
-Several procedures are performed to generate BDC Data cube collections. There are two main softwares that are responsible for processing the BDC data, the Image Collection Builder and Data Cube Builder.
+Several procedures are performed to generate Harmonize Harmonize Brazil collections. There are two main softwares that are responsible for processing the Harmonize Brazil data, the Image Collection Builder and Data Cube Builder.
 
-Based on that, :numref:`Figure %s <products:processing-flow>` illustrates a diagram containing the main procedures used to generate BDC data products.
+Based on that, :numref:`Figure %s <products:processing-flow>` illustrates a diagram containing the main procedures used to generate Harmonize Brazil data products.
 
 
-.. figure:: ../img/products/bdc.png
-    :alt: BDC Image collection ingestion and Data Cube generation
+.. figure:: ../img/products/Harmonize Brazil.png
+    :alt: Harmonize Brazil Image collection ingestion and Data Cube generation
     :width: 720
     :figclass: align-center
     :name: products:processing-flow
 
-    BDC Image collection ingestion and Data Cube generation.
+    Harmonize Brazil Image collection ingestion and Data Cube generation.
 
 
 Image Collection Builder
 ++++++++++++++++++++++++
 
 
-The Image Collection Builder is responsible for acquiring (download, process and publish) data, providing what is called Analysis Read Data (ARD). Although, to produce the BDC Data Cubes, recently we are obtaining and using already processed surface reflectance products the Image Collection Builder can also acquire and process non-ARD data.
+The Image Collection Builder is responsible for acquiring (download, process and publish) data, providing what is called Analysis Read Data (ARD). Although, to produce the Harmonize Harmonize Brazils, recently we are obtaining and using already processed surface reflectance products the Image Collection Builder can also acquire and process non-ARD data.
 
 
 Image Acquisition
@@ -48,7 +48,7 @@ Image Acquisition
 The Image Collection Builder is capable of acquiring CBERS-4, CBERS-4A, Sentinel-2, Landsat-5, Landsat-7, Landsat-8, Landsat-9, TERRA and AQUA images.
 
 
-Regarding CBERS Images, the BDC Image Collection Builder acquires Surface Reflectance products from CBERS-4/MUX, CBERS-4/WFI and CBERS-4A/WFI already processed by INPE.
+Regarding CBERS Images, the Harmonize Brazil Image Collection Builder acquires Surface Reflectance products from CBERS-4/MUX, CBERS-4/WFI and CBERS-4A/WFI already processed by INPE.
 
 
 Landsat images can be downloaded from USGS at `Earth Explorer <https://earthexplorer.usgs.gov/>`_ . The tool can obtain L1 (Digital Number) and L2 (Surface Reflectance) products. We are collecting Landsat collection-2 data, but we used to collect Landsat collection-1 data in the past.
@@ -57,14 +57,14 @@ Landsat images can be downloaded from USGS at `Earth Explorer <https://earthexpl
 Sentinel-2/MSI images from both Sentinel-2A and Sentinel-2B can be acquired directly from ESA at `DataSpace <https://dataspace.copernicus.eu/>`_ . The tool can obtain L1C products (TOA) and L2A products (Surface Reflectance).
 
 
-Regarding TERRA and AQUA, already processed products obtained. We collect the MOD13Q1 and MYD13Q1 data, which already are data cube following BDC concepts.
+Regarding TERRA and AQUA, already processed products obtained. We collect the MOD13Q1 and MYD13Q1 data, which already are data cube following Harmonize Brazil concepts.
 
 
 Atmospheric Correction
 ~~~~~~~~~~~~~~~~~~~~~~
 
 
-The BDC Image Collection builder has the option to process data and generate Surface Reflectance Products. When BDC performs the atmospheric correction procedure, algorithms change according to the input data. Once this process is performed and the resulting data is cataloged, Surface Reflectance collection are available to be used to produce Data Cube Collections.
+The Harmonize Brazil Image Collection builder has the option to process data and generate Surface Reflectance Products. When Harmonize Brazil performs the atmospheric correction procedure, algorithms change according to the input data. Once this process is performed and the resulting data is cataloged, Surface Reflectance collection are available to be used to produce Data Cube Collections.
 
 
 CBERS-4 and CBERS-4A are already obtained processed as Surface Reflectance Products at INPE's Image Catalog. Its Atmospheric Correction is performed through a software called MS3 :cite:`silva:2013`.
@@ -89,16 +89,16 @@ Cloud Masking
 Cloud masking algorithms can be used to detect undesirable areas, such as cloud, cloud shadows or snow. However, cloud masking algorithm also depends on the characteristic of each sensor.
 
 
-CBERS-4 uses the :doc:`CMASK <./bands/CMASK>` due to it reduced number of spectral bands. To Produce BDC Data Products, we adopt the "Clear Pixel" value (127) as valid regions to build the Data Cubes through Best pixel approach.
+CBERS-4 uses the :doc:`CMASK <./bands/CMASK>` due to it reduced number of spectral bands. To Produce Harmonize Brazil Data Products, we adopt the "Clear Pixel" value (127) as valid regions to build the Data Cubes through Best pixel approach.
 
 
-For Landsat-8 and Landsat-9 Collection-2 data we use the cloud mask provided within :doc:`QA_pixel <./bands/QA>`. To Produce BDC Data Products, we adopt bits 6 and 7 ("Clear" and "Water", respectivelly) as valid regions to build the Data Cubes through Best pixel approach, as long as they are not marked as 0, 1, 2, 3, 4 or 5 ("Fill", "Dilated Cloud", "Cirrus", "Cloud", "Cloud Shadow" or "Snow", respectivelly).
+For Landsat-8 and Landsat-9 Collection-2 data we use the cloud mask provided within :doc:`QA_pixel <./bands/QA>`. To Produce Harmonize Brazil Data Products, we adopt bits 6 and 7 ("Clear" and "Water", respectivelly) as valid regions to build the Data Cubes through Best pixel approach, as long as they are not marked as 0, 1, 2, 3, 4 or 5 ("Fill", "Dilated Cloud", "Cirrus", "Cloud", "Cloud Shadow" or "Snow", respectivelly).
 
 
 .. note:: In deprecated Landsat Data Cubes (:doc:`LC8_30_16D_STK-1 <../products/cube-collections/LC8_30_16D_STK-1>`) we have used the :doc:`FMASK <./bands/FMASK>` cloud mask version 4.2 :cite:`qiu:2019` , which are no longer used in recent products. For detailed information check the (:doc:`Data Cube Products Page <../products/cube-collections>`).
 
 
-For Sentinel-2 data we use the cloud mask provided within the :doc:`SCL <./bands/SCL>` product that cames along with Sentinel-2 data. To Produce BDC Data Products, we adopt the values 4, 5 and 6 ("Vegetation", "Not Vegetated" and "Water", respectivelly) as valid regions to build the Data Cubes through Best pixel approach.
+For Sentinel-2 data we use the cloud mask provided within the :doc:`SCL <./bands/SCL>` product that cames along with Sentinel-2 data. To Produce Harmonize Brazil Data Products, we adopt the values 4, 5 and 6 ("Vegetation", "Not Vegetated" and "Water", respectivelly) as valid regions to build the Data Cubes through Best pixel approach.
 
 
 Data Cube Builder
@@ -116,7 +116,7 @@ In order to build the data cube collections, all input images must be at the sam
 
 
 .. figure:: ../img/products/cube-builder.png
-    :alt: BDC Cube generation
+    :alt: Harmonize Brazil Cube generation
     :width: 720
     :figclass: align-center
     :name: products:cube-builder
@@ -128,9 +128,9 @@ Temporal Compositing
 ~~~~~~~~~~~~~~~~~~~~
 
 
-BDC Data Cube Collections can be categorized in two types, identity and composed. An identity data cube consists in all available images on their original acquisition date reprojected and cropped to a common grid. Based on that, its temporal compositing function is identity. Temporal Compositing function can be used to generate regular series. This is performed by reducing the time dimension, which generates regularly spaced in time observations, here called composed data cubes.
+Harmonize Harmonize Brazil Collections can be categorized in two types, identity and composed. An identity data cube consists in all available images on their original acquisition date reprojected and cropped to a common grid. Based on that, its temporal compositing function is identity. Temporal Compositing function can be used to generate regular series. This is performed by reducing the time dimension, which generates regularly spaced in time observations, here called composed data cubes.
 
-Several compositing functions were tested in BDC: ( *i* ) Average (AVG), ( *ii* ) Median (MED), and ( *iii* ) Least Cloud Cover First (LCF). Considering the time dimension and a time step, e. g. monthly or 16 days, these temporal composition functions are applied on the identity data cubes, ideally on observations that are not detected as cloud or cloud shadow by the quality assessment band as considered in the following Tables:
+Several compositing functions were tested in Harmonize Brazil: ( *i* ) Average (AVG), ( *ii* ) Median (MED), and ( *iii* ) Least Cloud Cover First (LCF). Considering the time dimension and a time step, e. g. monthly or 16 days, these temporal composition functions are applied on the identity data cubes, ideally on observations that are not detected as cloud or cloud shadow by the quality assessment band as considered in the following Tables:
 
 
 +------------------------------+--------------+-------------------+-----------------------+-----------------------+
@@ -152,21 +152,21 @@ The Average temporal composing consists in the average of the observed values. T
 
 
 .. figure:: ../img/products/compositing-function.png
-    :alt: BDC Time Compositing Functions
+    :alt: Harmonize Brazil Time Compositing Functions
     :width: 720
     :figclass: align-center
     :name: products:compositing-functions
 
-    BDC Time Compositing Functions.
+    Harmonize Brazil Time Compositing Functions.
 
 
 .. note:: If there are only not clear observations values for a time step, the LCF temporal compositing outputs the value from the clearest image.
 
 
-.. note:: On Previouse versions of BDC, LCF was named STK (Stack). We adopt the LCF nomenclature to specify how values are selected on the compositing function.
+.. note:: On Previouse versions of Harmonize Brazil, LCF was named STK (Stack). We adopt the LCF nomenclature to specify how values are selected on the compositing function.
 
 
-After the time compositing function is applied, the Brazil Data Cube Builder also calculates the NDVI and EVI spectral indices using the spectral bands of the time composed data cube. Besides that, for the time composed data cubes, three provenance bands are also generated for tracking characteristics of the composite period. The data product bands are :doc:`CLEAROB <./bands/CLEAROB>`, :doc:`TOTALOB <./bands/TOTALOB>` and :doc:`PROVENANCE <./bands/PROVENANCE>`.
+After the time compositing function is applied, the Harmonize Brazil Builder also calculates the NDVI and EVI spectral indices using the spectral bands of the time composed data cube. Besides that, for the time composed data cubes, three provenance bands are also generated for tracking characteristics of the composite period. The data product bands are :doc:`CLEAROB <./bands/CLEAROB>`, :doc:`TOTALOB <./bands/TOTALOB>` and :doc:`PROVENANCE <./bands/PROVENANCE>`.
 
 
 .. note:: Aditional bands and idices may be generated for specific products. For detailed information check the (:doc:`Data Cube Products Page <../products/cube-collections>`.

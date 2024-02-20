@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020-2023 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024-2023 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -14,11 +14,11 @@
     along with this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
 
 
-Brazil Data Cube Documentation
+Harmonize Brazil Documentation
 ==============================
 
 
-Welcome to the **Brazil Data Cube** project!
+Welcome to the **Harmonize Brazil** project!
 
 
 .. toctree::
@@ -49,8 +49,8 @@ Welcome to the **Brazil Data Cube** project!
     worcap-2021
     ibge-2021
     sbsr-2021
-    worcap-2020
-    datascience-2020
+    worcap-2024
+    datascience-2024
 
 
 .. toctree::

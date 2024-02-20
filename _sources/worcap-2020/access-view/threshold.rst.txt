@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -28,7 +28,7 @@ Histograma
 O histograma de uma imagem digital, também conhecido como distribuição de frequências, é a representação gráfica em colunas de um conjunto de dados que mostra a intensidade de valores e a quantidade de pixels com tal intensidade e são base para diversos tipos de processamento digital de imagens :ref:`Gonzales & Woods (2007) <gonzales_2007>`. Alguns tipos de histograma podem ser observados na :numref:`Figura %s <fig:histogram>`.
 
 
-.. figure:: ../../img/worcap-2020/access-view/histogram.png
+.. figure:: ../../img/worcap-2024/access-view/histogram.png
     :alt: Histogram
     :width: 600
     :figclass: align-center
@@ -44,7 +44,7 @@ Diagrama de dispersão (Scatterplot)
 Diagramas de dispersão ou *scatterplot* é a representação gráfica no plano cartesiano do comportomanto de duas ou mais variáveis. *Scatterplots* são úteis para analisar a correlação entre dados. Em um *scatterplot*, os dados são exibidos como um conjunto de pontos, cada um com o valor associado a cada varíavel do gráfico. A :numref:`Figura %s <fig:scatterplot3d>` ilustra um *scatterplot* em 3 dimensões.
 
 
-.. figure:: ../../img/worcap-2020/access-view/scatterplot3d.png
+.. figure:: ../../img/worcap-2024/access-view/scatterplot3d.png
     :alt: Scatter Plot 3D
     :width: 600
     :figclass: align-center
@@ -56,7 +56,7 @@ Diagramas de dispersão ou *scatterplot* é a representação gráfica no plano 
 Devido a dificuldade de visualização de um plano 3d em um plano 2d, é mais comum que scatterplots de 2 dimensões sejam utilizados para análises (2 varíaveis). Exemplos de *scatterplots* podem ser observados na :numref:`Figura %s <fig:scatterplot1>` e :numref:`Figura %s <fig:scatterplot2>`.
 
 
-.. figure:: ../../img/worcap-2020/access-view/scatterplot1.png
+.. figure:: ../../img/worcap-2024/access-view/scatterplot1.png
     :alt: Scatter Plot
     :width: 600
     :figclass: align-center
@@ -65,7 +65,7 @@ Devido a dificuldade de visualização de um plano 3d em um plano 2d, é mais co
     Exemplo de Diagrama de dispersão (scatterplot) utilizando bandas 6 e 7 do sensor MODIS, com linha separando classe de nuvem das demais classes. Fonte: modificado de modificado de :ref:`PAN et al. (2015) <pan_2015>`.
 
 
-.. figure:: ../../img/worcap-2020/access-view/scatterplot2.png
+.. figure:: ../../img/worcap-2024/access-view/scatterplot2.png
     :alt: Scatter Plot
     :width: 600
     :figclass: align-center
@@ -81,7 +81,7 @@ Notebook Aplicando Threshold
 ++++++++++++++++++++++++++++
 
 
-Façamos agora um exercício utilizando imagens do projeto Brazil Data Cube e aplicando um limiar sobre as imagens para separar diferentes alvos presentes na mesmapor meio de Python Notebook:
+Façamos agora um exercício utilizando imagens do projeto Harmonize Brazil e aplicando um limiar sobre as imagens para separar diferentes alvos presentes na mesmapor meio de Python Notebook:
 
 
 - https://github.com/brazil-data-cube/jupyter-gallery/blob/master/Python/stac/stac-image-threshold.ipynb

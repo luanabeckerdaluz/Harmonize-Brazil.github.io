@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Using Jupyter Environment with the ODC &mdash; Brazil Data Cube</title>
+  <title>Using Jupyter Environment with the ODC &mdash; Harmonize Brazil</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/table_styling.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/bdc.css" type="text/css" />
-    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -33,8 +33,8 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #2980B9" >
-            <a href="../../index.html" class="icon icon-home"> Brazil Data Cube
-            <img src="../../_static/logo-bdc.png" class="logo" alt="Logo"/>
+            <a href="../../index.html" class="icon icon-home"> Harmonize Brazil
+            <img src="../../_static/harmonize_logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -45,11 +45,11 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">Brazil Data Cube Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Harmonize Brazil Documentation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../products.html">BDC Available Data Products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../products.html">Harmonize Brazil Available Data Products</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../applications.html">Services and Applications</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../dc_explorer.html">Data Cube Explorer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../stac.html">SpatioTemporal Asset Catalog (STAC)</a></li>
@@ -76,12 +76,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../../worcap-2023.html">WORCAP 2023</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../treinamento-2023.html">Treinamento PRODES 2023</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../sbsr-2023.html">SBSR 2023 - Simpósio Brasileiro de Sensoriamento Remoto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../treinamento-2022.html">Treinamento BDC 2022</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../treinamento-2022.html">Treinamento Harmonize Brazil 2022</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../worcap-2021.html">WorCAP 2021 - Introdução ao STAC e WTSS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ibge-2021.html">IBGE 2021 - Workshop Brazil Data Cube com IBGE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ibge-2021.html">IBGE 2021 - Workshop Harmonize Brazil com IBGE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../sbsr-2021.html">SBSR Interim 2021 - Simpósio Brasileiro de Sensoriamento Remoto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../worcap-2020.html">WorCAP 2020 - Geoinformática com Aplicações de Machine Learning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datascience-2020.html">CAP-394 - Introdução a Data Science (2020)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../worcap-2024.html">WorCAP 2024 - Geoinformática com Aplicações de Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datascience-2024.html">CAP-394 - Introdução a Data Science (2024)</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul>
@@ -99,7 +99,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Brazil Data Cube</a>
+          <a href="../../index.html">Harmonize Brazil</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -126,12 +126,12 @@
 <p>To access and manipulate the registered data, it is possible to use the ODC API in Python. This use is facilitated with the help of Jupyter Notebook. In this tutorial’s installation stage, the Docker Image <code class="docutils literal notranslate"><span class="pre">local/odc-jupyter</span></code> was created. It will be used to access the data.</p>
 <p>Use the command below to create an instance of the ODC container with support for Jupyter Notebook environment:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>docker run --detach \
-           --name bdc-odc-jupyter \
-           --hostname bdc-odc-jupyter \
-           --network bdc-odc-net \
+           --name Harmonize Brazil-odc-jupyter \
+           --hostname Harmonize Brazil-odc-jupyter \
+           --network Harmonize Brazil-odc-net \
            --publish 8889:8889 \
            --volume $(pwd)/odc-data-repository:/data \
-           --env DB_HOSTNAME=bdc-odc-pg \
+           --env DB_HOSTNAME=Harmonize Brazil-odc-pg \
            --env DB_DATABASE=opendatacube \
            --env DB_USERNAME=opendatacube \
            --env DB_PASSWORD=secreto \
@@ -141,14 +141,14 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Remember to change the information about the location of stored data. The <code class="docutils literal notranslate"><span class="pre">--volume</span></code> parameter, in the above command, must point to the same location registered when creating the <code class="docutils literal notranslate"><span class="pre">bdc-odc-core</span></code> container</p>
+<p>Remember to change the information about the location of stored data. The <code class="docutils literal notranslate"><span class="pre">--volume</span></code> parameter, in the above command, must point to the same location registered when creating the <code class="docutils literal notranslate"><span class="pre">Harmonize Brazil-odc-core</span></code> container</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you have changed the password of the database server, it will be necessary to include the same password in the parameter <code class="docutils literal notranslate"><span class="pre">--env</span> <span class="pre">DB_PASSWORD</span></code>.</p>
 </div>
-<p>If your <code class="docutils literal notranslate"><span class="pre">bdc-odc-jupyter</span></code> container is running, use the following command to recover the <code class="docutils literal notranslate"><span class="pre">access</span> <span class="pre">token</span></code> needed to open the Jupyter Notebook environment on your browser screen:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">exec</span> <span class="o">-</span><span class="n">it</span> <span class="n">bdc</span><span class="o">-</span><span class="n">odc</span><span class="o">-</span><span class="n">jupyter</span> <span class="n">jupyter</span> <span class="n">notebook</span> <span class="nb">list</span>
+<p>If your <code class="docutils literal notranslate"><span class="pre">Harmonize Brazil-odc-jupyter</span></code> container is running, use the following command to recover the <code class="docutils literal notranslate"><span class="pre">access</span> <span class="pre">token</span></code> needed to open the Jupyter Notebook environment on your browser screen:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">exec</span> <span class="o">-</span><span class="n">it</span> <span class="n">Harmonize Brazil</span><span class="o">-</span><span class="n">odc</span><span class="o">-</span><span class="n">jupyter</span> <span class="n">jupyter</span> <span class="n">notebook</span> <span class="nb">list</span>
 </pre></div>
 </div>
 <p>The Jupyter server should reply with a message similar to:</p>
@@ -163,14 +163,14 @@ http://0.0.0.0:8889/?token=d3e5ce2c0ae5e003cc5b606bdacc7e25a34ea23d36081363 :: /
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you have problems with the Jupyter server, see the log output of your container:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">logs</span> <span class="o">-</span><span class="n">f</span> <span class="n">bdc</span><span class="o">-</span><span class="n">odc</span><span class="o">-</span><span class="n">jupyter</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">logs</span> <span class="o">-</span><span class="n">f</span> <span class="n">Harmonize Brazil</span><span class="o">-</span><span class="n">odc</span><span class="o">-</span><span class="n">jupyter</span>
 </pre></div>
 </div>
 <p>A container with functional status will display output, as shown below. It will show the <code class="docutils literal notranslate"><span class="pre">access</span> <span class="pre">token</span></code> needed to use the Jupyter environment in the browser:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[I 21:46:46.140 NotebookApp] Writing notebook server cookie secret to /home/datacube/.local/share/jupyter/runtime/notebook_cookie_secret
 [I 21:46:47.391 NotebookApp] Serving notebooks from local directory: /data
 [I 21:46:47.391 NotebookApp] Jupyter Notebook 6.1.3 is running at:
-[I 21:46:47.392 NotebookApp] http://bdc-odc-jupyter:8889/?token=d3e5ce2c0ae5e003cc5b606bdacc7e25a34ea23d36081363
+[I 21:46:47.392 NotebookApp] http://Harmonize Brazil-odc-jupyter:8889/?token=d3e5ce2c0ae5e003cc5b606bdacc7e25a34ea23d36081363
 [I 21:46:47.392 NotebookApp]  or http://127.0.0.1:8889/?token=d3e5ce2c0ae5e003cc5b606bdacc7e25a34ea23d36081363
 [I 21:46:47.392 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
 [W 21:46:47.409 NotebookApp] No web browser found: could not locate runnable browser.
@@ -179,7 +179,7 @@ http://0.0.0.0:8889/?token=d3e5ce2c0ae5e003cc5b606bdacc7e25a34ea23d36081363 :: /
     To access the notebook, open this file in a browser:
         file:///home/datacube/.local/share/jupyter/runtime/nbserver-1-open.html
     Or copy and paste one of these URLs:
-        http://bdc-odc-jupyter:8889/?token=d3e5ce2c0ae5e003cc5b606bdacc7e25a34ea23d36081363
+        http://Harmonize Brazil-odc-jupyter:8889/?token=d3e5ce2c0ae5e003cc5b606bdacc7e25a34ea23d36081363
      or http://127.0.0.1:8889/?token=d3e5ce2c0ae5e003cc5b606bdacc7e25a34ea23d36081363
 </pre></div>
 </div>
@@ -198,7 +198,7 @@ http://0.0.0.0:8889/?token=d3e5ce2c0ae5e003cc5b606bdacc7e25a34ea23d36081363 :: /
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, INPE.</p>
+    <p>&#169; Copyright 2024, INPE.</p>
   </div>
 
    

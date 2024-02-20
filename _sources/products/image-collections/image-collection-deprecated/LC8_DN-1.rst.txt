@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020-2023 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024-2023 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -20,9 +20,9 @@ LC8_DN-1
 
 .. warning::
 
-    This product is deprecated and is not available anymore in BDC.
+    This product is deprecated and is not available anymore in Harmonize Brazil.
 
-    Brazil Data Cube Team.
+    Harmonize Brazil Team.
 
 
 The LC8_DN image collection product contains Landsat-8/OLI Digital Number data at its native spatial resolution (30m). These images are the same that can be found at Earth Explorer image catalog under the Landsat-8 collection 1 dataset (https://earthexplorer.usgs.gov/).

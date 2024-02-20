@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020-2023 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024-2023 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@ Informações sobre o curso
 -------------------------
 
 
-O minicurso Brazil Data Cube uma abordagem para Geoinformática com Aplicações de Machine Learning tem como objetivo apresentar uma introdução sobre conceitos de cubos de dados de observação da Terra e análise de séries temporais de imagens de sensoriamento remoto utilizando dados e serviços do projeto `Brazil Data Cube <http://brazildatacube.dpi.inpe.br/>`_,  do INPE. O curso será ministrado utilizando a linguagem R.
+O minicurso Harmonize Brazil uma abordagem para Geoinformática com Aplicações de Machine Learning tem como objetivo apresentar uma introdução sobre conceitos de cubos de dados de observação da Terra e análise de séries temporais de imagens de sensoriamento remoto utilizando dados e serviços do projeto `Harmonize Brazil <http://brazildatacube.dpi.inpe.br/>`_,  do INPE. O curso será ministrado utilizando a linguagem R.
 
 
 O conteúdo será ministrado nos dias 13, 14 e 15 de Setembro de 2023 com a seguinte programação:
@@ -28,13 +28,13 @@ O conteúdo será ministrado nos dias 13, 14 e 15 de Setembro de 2023 com a segu
 
 - Introdução à cubos de dados de observação da Terra e análise de séries temporais
 
-- Produtos gerados pelo projeto Brazil Data Cube (BDC)
+- Produtos gerados pelo projeto Harmonize Brazil (Harmonize Brazil)
 
-- Plataforma BDC Explorer
+- Plataforma Harmonize Brazil Explorer
 
 **15 de Setembro (Quinta feira)**:
 
-- Serviços do projeto BDC - STAC, WTSS e WLTS: Ferramentas para descoberta e busca de dados, extração de séries temporais de imagens e trajetórias de uso e cobertura da terra
+- Serviços do projeto Harmonize Brazil - STAC, WTSS e WLTS: Ferramentas para descoberta e busca de dados, extração de séries temporais de imagens e trajetórias de uso e cobertura da terra
 
 - SITS - Satellite Image Time Series: Análise de séries temporais de imagens extraídas de cubos de dados
 
@@ -64,8 +64,8 @@ Cada participante deve portar seu notebook.
 
 **Links úteis**
 
-- Repositório oficial de Notebooks Jupyter do BDC, onde encontram-se diversos códigos de exemplo de uso das ferramentas do BDC: https://github.com/brazil-data-cube/code-gallery
+- Repositório oficial de Notebooks Jupyter do Harmonize Brazil, onde encontram-se diversos códigos de exemplo de uso das ferramentas do Harmonize Brazil: https://github.com/brazil-data-cube/code-gallery
 
-- Discord BDC, onde pode-se entrar em contato com usuários e desenvolvedores do BDC: https://discord.gg/TqaMJSBtUs
+- Discord Harmonize Brazil, onde pode-se entrar em contato com usuários e desenvolvedores do Harmonize Brazil: https://discord.gg/TqaMJSBtUs
 
 - Release do curso no github: https://github.com/brazil-data-cube/code-gallery/releases/tag/sbsr2023

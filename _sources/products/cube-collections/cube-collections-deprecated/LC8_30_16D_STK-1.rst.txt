@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020-2023 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024-2023 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,10 +19,10 @@ LC8_30_16D_STK-1
 
 .. warning::
 
-    This product is being deprecated and will not be available anymore. LC8_30_16D_STK-1 is being replaced by :doc:`LANDSAT-2M-1 <./../LANDSAT-2M-1>`. This new product will use Landsat Collection-2 instead of Collection 1, will generated using BDC GRID newest version (version 2) and will also be generated using Landsat-9 images.
+    This product is being deprecated and will not be available anymore. LC8_30_16D_STK-1 is being replaced by :doc:`LANDSAT-2M-1 <./../LANDSAT-2M-1>`. This new product will use Landsat Collection-2 instead of Collection 1, will generated using Harmonize Brazil GRID newest version (version 2) and will also be generated using Landsat-9 images.
     The LC8_30_16D_STK-1 product will be available until we process the same areas and times in the new product.
 
-    Brazil Data Cube Team.
+    Harmonize Brazil Team.
 
 The LC8_30_16D_STK-1 product contains OLI surface reflectance at full spatial resolution (30m) and 16 days Temporal Compositing considering the :doc:`FMASK <../../../specifications/bands/FMASK>` cloud mask. The following Table lists the LC8_30_16D_STK-1 product characteristics:
 

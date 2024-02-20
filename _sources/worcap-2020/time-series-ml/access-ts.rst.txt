@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@ Prática com R Notebook
 **********************
 
 
-.. figure:: ../../img/worcap-2020/time-series-ml/access-ts/sits-access-ts.png
+.. figure:: ../../img/worcap-2024/time-series-ml/access-ts/sits-access-ts.png
     :alt: sits access time series
     :width: 280
     :figclass: align-right
@@ -45,7 +45,7 @@ Acesso à provedores de séries temporais
 ***************************************
 
 
-Séries temporais de imagens de satélite podem ser obtidas de várias formas. Atualmente, o ``sits`` é capaz de acessar os serviços Web WTSS e SATVEG de séries temporais. Além desses serviços, o ``sits``, em breve, será capaz de acessar os produtos do projeto Brazil Data Cube. Além desses serviços Web, o ``sits`` permite acesso a arquivos GeoTIF remotos ou locais organizados como *bricks* (veremos como acessá-los mais adiante).
+Séries temporais de imagens de satélite podem ser obtidas de várias formas. Atualmente, o ``sits`` é capaz de acessar os serviços Web WTSS e SATVEG de séries temporais. Além desses serviços, o ``sits``, em breve, será capaz de acessar os produtos do projeto Harmonize Brazil. Além desses serviços Web, o ``sits`` permite acesso a arquivos GeoTIF remotos ou locais organizados como *bricks* (veremos como acessá-los mais adiante).
 
 
 Nesta prática, nos concentraremos em um tipo de acesso a séries temporais: o serviço Web WTSS. No ``sits``, a função ``sits_cube()`` cria referências a provedores de séries temporais. O código a seguir mostra um exemplo de chamada a essa função que cria uma referência ao serviço WTSS do INPE.
@@ -176,7 +176,7 @@ Para salvar uma tabela de amostras usamos o comando ``saveRDS()`` sobre a variá
     print(ts3)
 
 
-Em nosso ambiente Kaggle, temos um conjunto com 1.892 amostras do Mato Grosso usadas para gerar o mapa descrito em [Simoes et al. (2020)](#simoes2020). O arquivo encontra-se em ``"../input/sits-dataset/samples.rds"`` e vamos carregá-lo para a variável ``samples``:
+Em nosso ambiente Kaggle, temos um conjunto com 1.892 amostras do Mato Grosso usadas para gerar o mapa descrito em [Simoes et al. (2024)](#simoes2024). O arquivo encontra-se em ``"../input/sits-dataset/samples.rds"`` e vamos carregá-lo para a variável ``samples``:
 
 
 .. code-block:: R

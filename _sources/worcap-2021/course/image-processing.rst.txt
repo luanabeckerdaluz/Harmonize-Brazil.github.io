@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -28,7 +28,7 @@ Fundamentos de cor
 Basicamente, as cores que humanos e outros animais notam são determinadas pela natureza da luz refletida por um objeto. Como pode ser observado na Figura abaixo, a luz visivel é composta por bandas estreitas de frequências no espectro eletromagnético :cite:`gonzalez:2007`.
 
 
-.. figure:: ../../img/worcap-2020/access-view/prisma.png
+.. figure:: ../../img/worcap-2024/access-view/prisma.png
     :alt: Prisma
     :width: 600
     :figclass: align-center
@@ -39,7 +39,7 @@ Basicamente, as cores que humanos e outros animais notam são determinadas pela 
 Os cones, sensores no olho responsáveis pela visão colorida, são capazes capaz de diferenciar 3 categorias principais de cores: azul, verde e vermelho, de modo que a Figura abaixo ilustra uma média experimental da luz absorvida, nos comprimentos de onda citados, pelo olho humano :cite:`gonzalez:2007`.
 
 
-.. figure:: ../../img/worcap-2020/access-view/rgb-absortion.png
+.. figure:: ../../img/worcap-2024/access-view/rgb-absortion.png
     :alt: RGB absortion
     :width: 600
     :figclass: align-center
@@ -60,7 +60,7 @@ Sensores podem ser utilizados para medir a resposta de alvos e gerar imagens dig
 Outra exemplificação desse processo pode ser observada na próxima Figura, na qual uma fonte de iluminação interaje com um elemento de uma cena, que é observado por um sistema imageador, projetado em um plano e digitalizado :cite:`gonzalez:2007`, seguida de uma demonstração de como seriam os valores digitais dessa imagem.
 
 
-.. figure:: ../../img/worcap-2020/access-view/image-sensing.png
+.. figure:: ../../img/worcap-2024/access-view/image-sensing.png
     :alt: Image Sensing
     :width: 600
     :figclass: align-center
@@ -83,7 +83,7 @@ Imagens Coloridas
 Sistemas imageadores geram imagens digitais para um determinado intervalos de comprimentos de onda, também chamado bandas espectrais. A amplitude de valores dessas imagens pode ser atribuída a cores que nossos olhos percebem (azul, verde e vermelho) para assim gerarmos imagens coloridas, como ilustrado:
 
 
-.. figure:: ../../img/worcap-2020/access-view/color.png
+.. figure:: ../../img/worcap-2024/access-view/color.png
     :alt: Color
     :width: 600
     :figclass: align-center

@@ -18,7 +18,7 @@ By default, layers viewed in Explorer are drawn in an order: the higher a layer 
 | 4     | Uploaded Layers | Layers imported by users through a url of the           |
 |       |                 | desired service.                                        |
 +-------+-----------------+---------------------------------------------------------+
-| 5     | Mosaics         | Generated with BDC technologies to deal with big        |
+| 5     | Mosaics         | Generated with Harmonize Brazil technologies to deal with big        |
 |       |                 | volumes of images and to select the best pixels         |
 |       |                 | (free of cloud and cloud shadow) obtained in one period |
 +-------+-----------------+---------------------------------------------------------+

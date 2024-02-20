@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Configuring the ODC-Core &mdash; Brazil Data Cube</title>
+  <title>Configuring the ODC-Core &mdash; Harmonize Brazil</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/table_styling.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/bdc.css" type="text/css" />
-    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -33,8 +33,8 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #2980B9" >
-            <a href="../../index.html" class="icon icon-home"> Brazil Data Cube
-            <img src="../../_static/logo-bdc.png" class="logo" alt="Logo"/>
+            <a href="../../index.html" class="icon icon-home"> Harmonize Brazil
+            <img src="../../_static/harmonize_logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -45,11 +45,11 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">Brazil Data Cube Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Harmonize Brazil Documentation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../products.html">BDC Available Data Products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../products.html">Harmonize Brazil Available Data Products</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../applications.html">Services and Applications</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../dc_explorer.html">Data Cube Explorer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../stac.html">SpatioTemporal Asset Catalog (STAC)</a></li>
@@ -76,12 +76,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../../worcap-2023.html">WORCAP 2023</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../treinamento-2023.html">Treinamento PRODES 2023</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../sbsr-2023.html">SBSR 2023 - Simpósio Brasileiro de Sensoriamento Remoto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../treinamento-2022.html">Treinamento BDC 2022</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../treinamento-2022.html">Treinamento Harmonize Brazil 2022</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../worcap-2021.html">WorCAP 2021 - Introdução ao STAC e WTSS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ibge-2021.html">IBGE 2021 - Workshop Brazil Data Cube com IBGE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ibge-2021.html">IBGE 2021 - Workshop Harmonize Brazil com IBGE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../sbsr-2021.html">SBSR Interim 2021 - Simpósio Brasileiro de Sensoriamento Remoto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../worcap-2020.html">WorCAP 2020 - Geoinformática com Aplicações de Machine Learning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datascience-2020.html">CAP-394 - Introdução a Data Science (2020)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../worcap-2024.html">WorCAP 2024 - Geoinformática com Aplicações de Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datascience-2024.html">CAP-394 - Introdução a Data Science (2024)</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul>
@@ -99,7 +99,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Brazil Data Cube</a>
+          <a href="../../index.html">Harmonize Brazil</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -124,11 +124,11 @@
   <div class="section" id="configuring-the-odc-core">
 <h1>Configuring the ODC-Core<a class="headerlink" href="#configuring-the-odc-core" title="Permalink to this headline"></a></h1>
 <p>The link that has been made between the <code class="docutils literal notranslate"><span class="pre">ODC-Core</span></code> and <code class="docutils literal notranslate"><span class="pre">PostgreSQL</span></code> containers is not enough for the correct functioning of the <code class="docutils literal notranslate"><span class="pre">ODC-Core</span></code>. It will be necessary to create the database schema with the ODC model. To do this, we will use the command line program called <code class="docutils literal notranslate"><span class="pre">datacube-cli</span></code>, available in the <code class="docutils literal notranslate"><span class="pre">ODC-Core</span></code> container:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">exec</span> <span class="o">-</span><span class="n">it</span> <span class="n">bdc</span><span class="o">-</span><span class="n">odc</span><span class="o">-</span><span class="n">core</span> <span class="n">datacube</span> <span class="n">system</span> <span class="n">init</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">exec</span> <span class="o">-</span><span class="n">it</span> <span class="n">Harmonize Brazil</span><span class="o">-</span><span class="n">odc</span><span class="o">-</span><span class="n">core</span> <span class="n">datacube</span> <span class="n">system</span> <span class="n">init</span>
 </pre></div>
 </div>
 <p>To check if the above command has created the tables of the ODC schema, use the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">exec</span> <span class="o">-</span><span class="n">it</span> <span class="n">bdc</span><span class="o">-</span><span class="n">odc</span><span class="o">-</span><span class="n">pg</span> <span class="n">psql</span> <span class="o">-</span><span class="n">U</span> <span class="n">opendatacube</span> <span class="o">-</span><span class="n">d</span> <span class="n">opendatacube</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;\dt agdc.*&quot;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">exec</span> <span class="o">-</span><span class="n">it</span> <span class="n">Harmonize Brazil</span><span class="o">-</span><span class="n">odc</span><span class="o">-</span><span class="n">pg</span> <span class="n">psql</span> <span class="o">-</span><span class="n">U</span> <span class="n">opendatacube</span> <span class="o">-</span><span class="n">d</span> <span class="n">opendatacube</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;\dt agdc.*&quot;</span>
 </pre></div>
 </div>
 <p>The following tables should be presented as a result:</p>
@@ -146,7 +146,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Another way to check if everything is right is to list the products registered in the system. No returns will be displayed as no data has been entered, but no errors should be shown either:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">exec</span> <span class="o">-</span><span class="n">it</span> <span class="n">bdc</span><span class="o">-</span><span class="n">odc</span><span class="o">-</span><span class="n">core</span> <span class="n">datacube</span> <span class="n">product</span> <span class="nb">list</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">exec</span> <span class="o">-</span><span class="n">it</span> <span class="n">Harmonize Brazil</span><span class="o">-</span><span class="n">odc</span><span class="o">-</span><span class="n">core</span> <span class="n">datacube</span> <span class="n">product</span> <span class="nb">list</span>
 </pre></div>
 </div>
 </div>
@@ -163,7 +163,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, INPE.</p>
+    <p>&#169; Copyright 2024, INPE.</p>
   </div>
 
    

@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020-2023 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024-2023 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
 Manhã
 -----
 
-Nesse período será feita uma introdução sobre séries temporais e cubos de dado, serão apresentados os dados do projeto *Brazil Data Cube (BDC)*, bem como o portal *BDC Explorer* e serviço de coleta amostras *TerraCollect*, além de utilizar os serviços *SpatioTemporal Asset Catalog (STAC)*, *Web Time Series Service (WTSS)* e *Web Land Trajectory Service (WLTS)*, em linguagem de programação R.
+Nesse período será feita uma introdução sobre séries temporais e cubos de dado, serão apresentados os dados do projeto *Harmonize Brazil (Harmonize Brazil)*, bem como o portal *Harmonize Brazil Explorer* e serviço de coleta amostras *TerraCollect*, além de utilizar os serviços *SpatioTemporal Asset Catalog (STAC)*, *Web Time Series Service (WTSS)* e *Web Land Trajectory Service (WLTS)*, em linguagem de programação R.
 
 Os códigos para acompanhamento do curso estão disponíveis na plataforma Kaggle nos links abaixo, mas os arquivos originais são mantidos e atualizados no repositório *Code-Gallery* no github do projeto (https://github.com/brazil-data-cube/code-gallery).
 
@@ -25,19 +25,19 @@ Os códigos para acompanhamento do curso estão disponíveis na plataforma Kaggl
 Slides
 ++++++
 
-- .. figure:: ../pdf/2023-04-02-SBSR-1-BDC-Intro.pdf
-    :alt: Introdução ao projeto Brazil Data Cube
+- .. figure:: ../pdf/2023-04-02-SBSR-1-Harmonize Brazil-Intro.pdf
+    :alt: Introdução ao projeto Harmonize Brazil
     :width: 720
 
-- .. figure:: ../pdf/2023-04-02-SBSR-2-BDC-Products.pdf
+- .. figure:: ../pdf/2023-04-02-SBSR-2-Harmonize Brazil-Products.pdf
     :alt: Produtos de dados
     :width: 720
 
-- .. figure:: ../pdf/2023-04-02-SBSR-3-BDC-Portal.pdf
-    :alt: BDC Explorer
+- .. figure:: ../pdf/2023-04-02-SBSR-3-Harmonize Brazil-Portal.pdf
+    :alt: Harmonize Brazil Explorer
     :width: 720
 
-- .. figure:: ../pdf/2023-04-02-SBSR-4-BDC-TerraCollect.pdf
+- .. figure:: ../pdf/2023-04-02-SBSR-4-Harmonize Brazil-TerraCollect.pdf
     :alt: Terra Collect
     :width: 720
 

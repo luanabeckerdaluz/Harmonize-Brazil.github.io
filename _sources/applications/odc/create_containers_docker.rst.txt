@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@ Running ODC Services
 
 With the Docker Images created, we will launch containers with the ODC environment. But first, we'll create a specific network to link the various services.::
 
-    docker network create bdc-odc-net
+    docker network create Harmonize Brazil-odc-net
 
 
 ``ODC-Core`` configuration depends on a ``PostgreSQL`` instance to store the metadata. Let's download an image of the PostgreSQL server with the PostGIS extension through the command ``docker pull``::
@@ -30,11 +30,11 @@ With the Docker Images created, we will launch containers with the ODC environme
 To create a container from this Docker Image::
 
     docker run --detach \
-               --name bdc-odc-pg \
+               --name Harmonize Brazil-odc-pg \
                --publish 127.0.0.1:5432:5432 \
-               --hostname bdc-odc-pg \
-               --network bdc-odc-net \
-               --volume bdc-odc-pgdata_vol:/var/lib/postgresql/data \
+               --hostname Harmonize Brazil-odc-pg \
+               --network Harmonize Brazil-odc-net \
+               --volume Harmonize Brazil-odc-pgdata_vol:/var/lib/postgresql/data \
                --env PGDATA=/var/lib/postgresql/data \
                --env POSTGRES_DB=opendatacube \
                --env POSTGRES_USER=opendatacube \
@@ -48,7 +48,7 @@ To create a container from this Docker Image::
 
 Check if your server is working. To do this, run the following command::
 
-    docker exec bdc-odc-pg psql -U opendatacube -c "SELECT version();"
+    docker exec Harmonize Brazil-odc-pg psql -U opendatacube -c "SELECT version();"
 
 
 The output of the above command should look like::
@@ -62,11 +62,11 @@ With PostgreSQL running, you can start the ``ODC-Core`` instance. To do so, use 
 
     docker run -it \
                --detach \
-               --name bdc-odc-core \
-               --hostname bdc-odc-core \
-               --network bdc-odc-net \
+               --name Harmonize Brazil-odc-core \
+               --hostname Harmonize Brazil-odc-core \
+               --network Harmonize Brazil-odc-net \
                --volume $(pwd)/odc-data-repository:/data \
-               --env DB_HOSTNAME=bdc-odc-pg \
+               --env DB_HOSTNAME=Harmonize Brazil-odc-pg \
                --env DB_DATABASE=opendatacube \
                --env DB_USERNAME=opendatacube \
                --env DB_PASSWORD=secret \

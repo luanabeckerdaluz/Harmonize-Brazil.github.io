@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@ Prática com R Notebook
 **********************
 
 
-.. figure:: ../../img/worcap-2020/time-series-ml/class-ts/sits-classify.png
+.. figure:: ../../img/worcap-2024/time-series-ml/class-ts/sits-classify.png
     :alt: sits time series classification
     :width: 280
     :figclass: align-right
@@ -53,7 +53,7 @@ O termo *machine learning*, ou em português aprendizado de máquina, se refere 
 Em nosso caso concreto, temos como conjunto :math:`X` séries temporais de um determinado intervalo de tempo e atributos espectrais (i.e. bandas e/ou índices espectrais). Por exemplo, séries temporais de NDVI e EVI com 23 observações no tempo, indo de setembro de um ano até agosto do ano seguinte. Quando dizemos que queremos treinar um modelo de machine learning, o que queremos é obter uma regra útil :math:`f` que associe as séries temporais de :math:`X` às classes de uso e cobertura da terra, elementos do conjunto :math:`Y`, como ilustrado na Figura abaixo. Existem vários métodos para isso.
 
 
-.. figure:: ../../img/worcap-2020/time-series-ml/class-ts/ml-function.png
+.. figure:: ../../img/worcap-2024/time-series-ml/class-ts/ml-function.png
     :alt: machine learning function
     :width: 280
     :figclass: align-center

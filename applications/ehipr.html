@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EODCtHRS Health Indicator Processing (ehipr) &mdash; Harmonize Brazil</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/bdc.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Jupyter Notebooks" href="stac/jupyter.html" />
+    <link rel="prev" title="Create Token" href="dc_explorer/token-module.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+            <a href="../index.html" class="icon icon-home"> Harmonize Brazil
+            <img src="../_static/harmonize_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Harmonize Brazil Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../products.html">Harmonize Brazil Available Data Products</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../applications.html">Services and Applications</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="dc_explorer.html">Data Cube Explorer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stac.html">SpatioTemporal Asset Catalog (STAC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wtss.html">Web Time Series Services (WTSS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wlts.html">Web Land Trajectory Service (WLTS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="odc.html">Open Data Cube (ODC)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="applications/rclimpr.html">R Climate Processing (rclimpr)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">EODCtHRS Health Indicator Processing (ehipr)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="stac/jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stac/general.html">Python Client Library</a></li>
+</ul>
+<li class="toctree-l1"><a class="reference internal" href="applications/edpu.html">EODCtHRS Data Publish (edpu)</a></li>
+</li>
+</ul>
+<li class="toctree-l1"><a class="reference internal" href="../specifications.html">Specifications</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href=""></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">General Information:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Harmonize Brazil</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../applications.html">Services and Applications</a> &raquo;</li>
+      <li>EODCtHRS Health Indicator Processing (ehipr)</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="dc_explorer/token-module.html" class="btn btn-neutral float-left" title="Create Token" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="stac/jupyter.html" class="btn btn-neutral float-right" title="Jupyter Notebooks" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="spatiotemporal-asset-catalog-stac">
+<h1>EODCtHRS Health Indicator Processing (ehipr)<a class="headerlink" href="#spatiotemporal-asset-catalog-stac" title="Permalink to this headline"></a></h1>
+
+<p>The <b>E</b>ODCtHRS <b>H</b>ealth <b>I</b>ndicator <b>PR</b>ocessing (ehipr) is a package developed by Harmonize Brazil Team - INPE in Python to provides a set of scripts to process the health indicator data produced by LIS to be accommodated in the EODCtHRS component. Your flow, represented in the Figure 2, starts with the step of fetching the tabular data from the bilis_harmonize github repository via API. Then, the spatial component is added to the data using the municipality grid provided by IBGE and it can be aggregated by spatial and temporal aggregation. After spatialize the data, if the user wants to crop the data to a specific region, it can be done as defining a specific parameter when call the spatialize_data function. Finally, it's possible to use the publish_data function to publish the data into GeoServer and its metadata into STAC using edpu package.</p>
+
+<p>The diagram depicted in the <a class="reference internal" href="#stac-data-model"><span class="std std-numref">Figure 2</span></a> contains the most important concepts behind the STAC data model:</p>
+<div class="align-center figure align-default" id="stac-data-model">
+<a class="reference internal image-reference" href="../_images/stac-model.png"><img alt="SpatioTemporal Asset Catalog Model" src="../_images/stac-model.png" style="width: 480px;" /></a>
+<p class="caption"><span class="caption-number">Figure 2 - </span><span class="caption-text">SpatioTemporal Asset Catalog Model.</span><a class="headerlink" href="#stac-data-model" title="Permalink to this image"></a></p>
+</div>
+<p>The description of the concepts below are adapted from the <a class="reference external" href="https://github.com/radiantearth/stac-spec">STAC Specification</a>:</p>
+<ul class="simple">
+<li><p><strong>Item</strong>: a <code class="docutils literal notranslate"><span class="pre">STAC</span> <span class="pre">Item</span></code> is the atomic unit of metadata in STAC, providing links to the actual <code class="docutils literal notranslate"><span class="pre">assets</span></code> (including thumbnails) that they represent. It is a <code class="docutils literal notranslate"><span class="pre">GeoJSON</span> <span class="pre">Feature</span></code> with additional fields for things like time, links to related entities and mainly to the assets. According to the specification, this is the atomic unit that describes the data to be discovered in a <code class="docutils literal notranslate"><span class="pre">STAC</span> <span class="pre">Catalog</span></code> or <code class="docutils literal notranslate"><span class="pre">Collection</span></code>.</p></li>
+<li><p><strong>Asset</strong>: a <code class="docutils literal notranslate"><span class="pre">spatiotemporal</span> <span class="pre">asset</span></code> is any file that represents information about the earth captured in a certain space and time.</p></li>
+<li><p><strong>Catalog</strong>: provides a structure to link various <code class="docutils literal notranslate"><span class="pre">STAC</span> <span class="pre">Items</span></code> together or even to other <code class="docutils literal notranslate"><span class="pre">STAC</span> <span class="pre">Catalogs</span></code> or <code class="docutils literal notranslate"><span class="pre">Collections</span></code>.</p></li>
+<li><p><strong>Collection:</strong> is a specialization of the <code class="docutils literal notranslate"><span class="pre">Catalog</span></code> that allows additional information about a spatiotemporal collection of data.</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="stac/jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stac/general.html">Python Client Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stac/general.html#r-client-library">R Client Library</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="dc_explorer/token-module.html" class="btn btn-neutral float-left" title="Create Token" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="stac/jupyter.html" class="btn btn-neutral float-right" title="Jupyter Notebooks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, INPE.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178140681-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-178140681-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

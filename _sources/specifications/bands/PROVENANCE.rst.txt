@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020-2023 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024-2023 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@ PROVENANCE
 ----------
 
 
-BDC PROVENANCE band indicates the origin date of the image selected as best pixel of the composed interval. Its values range from 1 to 366, where 1 represents January first and 366 December 31 (in leap years). Based on that, if the PROVENANCE band indicates the value 231 for a specific pixel, this means that the value came from an image of August 19. The following tables shows Julian date calendars used by the PROVENANCE band:
+Harmonize Brazil PROVENANCE band indicates the origin date of the image selected as best pixel of the composed interval. Its values range from 1 to 366, where 1 represents January first and 366 December 31 (in leap years). Based on that, if the PROVENANCE band indicates the value 231 for a specific pixel, this means that the value came from an image of August 19. The following tables shows Julian date calendars used by the PROVENANCE band:
 
 
 +---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+

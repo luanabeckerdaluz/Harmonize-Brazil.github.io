@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@ Programa CBERS e dados CBERS-4/WFI
 ++++++++++++++++++++++++++++++++++
 
 
-.. figure:: ../../img/worcap-2020/access-view/cbers-satellite.png
+.. figure:: ../../img/worcap-2024/access-view/cbers-satellite.png
     :alt: CBERS Satellite
     :width: 200
     :figclass: align-right
@@ -31,7 +31,7 @@ Programa CBERS e dados CBERS-4/WFI
 O programa de Satélite Sino-Brasileiro de Recursos Terrestres (CBERS) é uma cooperação entre Brasil e China, estabelecido em 1988, para suprir ambos os países com imagens de sensoriamento remoto multiespectral :cite:`ponzoni:2008`. Atualmente, o CBERS-4 esta em operação, desde dezembro de 2014. CBERS-4 carrega quatro cameras: (*i*) Camera Panchromatica and Multiespectral, (*ii*) a Camera Multispectral Camera (MUX), (*iii*) Sistema Infravermelho (IRS), and (*iv*) a Câmera Avançada de Amplo Campo de Visada (WFI). O satélite CBERS-4 tem órbita sol-sincrona com uma altitude de  778 km. o sensor WFI tem 4 bandas espectrais, azul, verde, vermelho e infravermelho próximo. Todas as bandas do sensor WFI apresentam resolução espacial de 64 m (nadir). Cenas WFI têm aproximadamente 866 km de visada (swath), o que permite uma resolução temporal de aproximadamente 5 dias. Imagens CBERS-4/WFI (bem como outros produtos) são gratuitamente distribuidas pelo INPE por meio do seu catálogo de imagens (http://www.dgi.inpe.br/catalogo/).
 
 
-Neste minicurso faremos uso de imagens provenientes do sensor WFI acoplada ao satélite CBERS-4. Caso as imagens fossem obtidas diretamente pelo portal do INPE, seriam necessários processamentos, por exemplo a aplicação dos coeficientes de calibração, que podem ser encontrados em :cite:`pinto:2016` e processamentos de correção atmosférica para que estes dados estivessem prontos para análise. Neste contexto, diversos provedores de dados, como a *USGS* e o *SciHub* coopernicus estão fornecendo dados já processador. Com relação à imagens CBERS-4, o projeto *Brazil Data Cube* fornece esses dados já processados de modo que não precisaremos nos preocupar com estes procedimentos. Além disso, o *BDC* também fornece esses dados agrupados como cubos de dados.
+Neste minicurso faremos uso de imagens provenientes do sensor WFI acoplada ao satélite CBERS-4. Caso as imagens fossem obtidas diretamente pelo portal do INPE, seriam necessários processamentos, por exemplo a aplicação dos coeficientes de calibração, que podem ser encontrados em :cite:`pinto:2016` e processamentos de correção atmosférica para que estes dados estivessem prontos para análise. Neste contexto, diversos provedores de dados, como a *USGS* e o *SciHub* coopernicus estão fornecendo dados já processador. Com relação à imagens CBERS-4, o projeto *Harmonize Brazil* fornece esses dados já processados de modo que não precisaremos nos preocupar com estes procedimentos. Além disso, o *Harmonize Brazil* também fornece esses dados agrupados como cubos de dados.
 
 
 Dito isso, vale a pena verificar os seguintes tópicos:

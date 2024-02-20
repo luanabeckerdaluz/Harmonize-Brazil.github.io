@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@ Prática com R Notebook
 **********************
 
 
-.. figure:: ../../img/worcap-2020/time-series-ml/class-brick/sits-postproc.png
+.. figure:: ../../img/worcap-2024/time-series-ml/class-brick/sits-postproc.png
   :alt: sits bricks classification
   :width: 280
   :figclass: align-right
@@ -56,7 +56,7 @@ No ``sits``, a função que faz referência a uma fonte de séries temporais é 
 
 .. note::
 
-    Em breve, o pacote ``sits`` poderá fazer referências aos cubos do Projeto *Brazil Data Cube*.
+    Em breve, o pacote ``sits`` poderá fazer referências aos cubos do Projeto *Harmonize Brazil*.
 
 
 Exemplo acesso serviço SATVeg
@@ -161,7 +161,7 @@ A última etapa para gerar um mapa de uso e cobertura da terra é converter as p
     plot(maps)
 
 
-.. figure:: ../../img/worcap-2020/time-series-ml/class-brick/sinop-lulc.png
+.. figure:: ../../img/worcap-2024/time-series-ml/class-brick/sinop-lulc.png
     :alt: sinop 2014 land use land cover map
     :width: 580
     :figclass: align-center

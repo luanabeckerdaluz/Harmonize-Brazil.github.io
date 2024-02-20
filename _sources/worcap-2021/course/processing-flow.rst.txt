@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020-2023 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024-2023 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -14,7 +14,7 @@
     along with this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
 
 
-Fluxo de Processamento dos dados do BDC
+Fluxo de Processamento dos dados do Harmonize Brazil
 ---------------------------------------
 
 
@@ -22,19 +22,19 @@ Image Collection builder
 ++++++++++++++++++++++++
 
 
-Os cubos de dados do Brazil Data Cube são gerados utilizando uma ferramenta chamada `Cube Builder`. Entretanto, para que o `Cube Builder` possa atuar, é necessário a existência de coleções de imagens. Com esta finalidade, foi desenvolvido o `Collection builder`, que é responsável pela injestão e processamentos para gerar as coleções de imagens prontas para análise do BDC. Baseado nisso, a  :numref:`Figura %s <fig:products-processing-flow>` ilustra um diagrama contendo os procedimentos principais usados para gerar os produtos de dados do BDC.
+Os cubos de dados do Harmonize Brazil são gerados utilizando uma ferramenta chamada `Cube Builder`. Entretanto, para que o `Cube Builder` possa atuar, é necessário a existência de coleções de imagens. Com esta finalidade, foi desenvolvido o `Collection builder`, que é responsável pela injestão e processamentos para gerar as coleções de imagens prontas para análise do Harmonize Brazil. Baseado nisso, a  :numref:`Figura %s <fig:products-processing-flow>` ilustra um diagrama contendo os procedimentos principais usados para gerar os produtos de dados do Harmonize Brazil.
 
 
-.. figure:: ../../img/products/bdc.png
-    :alt: BDC Image collection ingestion and Data Cube generation
+.. figure:: ../../img/products/Harmonize Brazil.png
+    :alt: Harmonize Brazil Image collection ingestion and Data Cube generation
     :width: 720
     :figclass: align-center
     :name: fig:products-processing-flow
 
-    Injestão de coleções de imagem BDC e geração de cubos de dados.
+    Injestão de coleções de imagem Harmonize Brazil e geração de cubos de dados.
 
 
-As imagens utilizadas pelo BDC são obtidas a partir de provedores oficiais dos dados, por exemplo os dados Sentinel-2 são obtidos através do portal copernicus da ESA e os dados Landsat-8 são obtidos através da USGS.
+As imagens utilizadas pelo Harmonize Brazil são obtidas a partir de provedores oficiais dos dados, por exemplo os dados Sentinel-2 são obtidos através do portal copernicus da ESA e os dados Landsat-8 são obtidos através da USGS.
 
 
 Correção Atmosférica
@@ -55,24 +55,24 @@ Data Cube Builder
 +++++++++++++++++
 
 
-Uma vez com as coleções de imagens, é possível gerar os cubos de dados. Entretanto é preciso definir uma grade para a geração desses produtos. Assim, no contexto do BDC foram elaboradas três grades.
+Uma vez com as coleções de imagens, é possível gerar os cubos de dados. Entretanto é preciso definir uma grade para a geração desses produtos. Assim, no contexto do Harmonize Brazil foram elaboradas três grades.
 
 
-Grades BDC
+Grades Harmonize Brazil
 ~~~~~~~~~~
 
-As grades BDC apresentam células de tamanho 1°x1.5°, 2°x3° e 4°x6°. Dependendo da resolução espacial de cada sensor, uma grade específica é utilizada para gerar seus cubos Cubos Sentinel-2/MSI são gerados usando células de 1°x1.5°, enquanto que cubos Landsat-8/OLI usam o tamanho 2°x3° tiles, e cubos CBERS-4/WFI são gerados utilizando o tamanho 4°x6°. As grades foram geradas adotando como ponto semente de origem a intersecção entre a linha do Equador e o meridiano 54° oeste. Seguindo os padrões cartográficos definidos pelo Instituto Brasileiro de Geografia e Estatística (IBGE), com esse ponto inicial definido é possível gerar automáticamente outras células de tamanho correspondente em um plano cartesiano do sistema de projeção, neste caso seguindo um plano de coordenadas na projeção Albers Equal-Area Cônica. Para cada célula, os limites superiores encontra perfeitamente os limites inferior do vizinho acima, e os limites esquerdos encontram perfeitamento os limites direitos das células à esquerda. A relação hierárquica entre as diferentes grades BDC podem ser observadas na :numref:`Figura %s <fig:products-bdc-grid>`.
+As grades Harmonize Brazil apresentam células de tamanho 1°x1.5°, 2°x3° e 4°x6°. Dependendo da resolução espacial de cada sensor, uma grade específica é utilizada para gerar seus cubos Cubos Sentinel-2/MSI são gerados usando células de 1°x1.5°, enquanto que cubos Landsat-8/OLI usam o tamanho 2°x3° tiles, e cubos CBERS-4/WFI são gerados utilizando o tamanho 4°x6°. As grades foram geradas adotando como ponto semente de origem a intersecção entre a linha do Equador e o meridiano 54° oeste. Seguindo os padrões cartográficos definidos pelo Instituto Brasileiro de Geografia e Estatística (IBGE), com esse ponto inicial definido é possível gerar automáticamente outras células de tamanho correspondente em um plano cartesiano do sistema de projeção, neste caso seguindo um plano de coordenadas na projeção Albers Equal-Area Cônica. Para cada célula, os limites superiores encontra perfeitamente os limites inferior do vizinho acima, e os limites esquerdos encontram perfeitamento os limites direitos das células à esquerda. A relação hierárquica entre as diferentes grades Harmonize Brazil podem ser observadas na :numref:`Figura %s <fig:products-Harmonize Brazil-grid>`.
 
 
-.. figure:: ../../img/products/bdc-grid-v1.png
-    :alt: BDC Grid
+.. figure:: ../../img/products/Harmonize Brazil-grid-v1.png
+    :alt: Harmonize Brazil Grid
     :width: 720
     :figclass: align-center
-    :name: fig:products-bdc-grid
+    :name: fig:products-Harmonize Brazil-grid
 
-    Grade BDC.
+    Grade Harmonize Brazil.
 
-O datum SIRGAS-2000, planimétrico oficial do Brasil, é o sistema geodésico de referência. Em suma, a string PROJ para a grade BDC pode ser expressa por:
+O datum SIRGAS-2000, planimétrico oficial do Brasil, é o sistema geodésico de referência. Em suma, a string PROJ para a grade Harmonize Brazil pode ser expressa por:
 
 
 .. math::
@@ -89,7 +89,7 @@ Warp
 Para construir os cubos de dados, todas as imagens devem estar em um mesmo sistema de projeção, usando a mesma grade e possuirem a mesma resolução espacial. O `Warp` é o procedimento que faz essa padronização, como pode ser visto na :numref:`Figura %s <fig:products-cube-builder>`. Warp consiste em recortar e mosaicar espacialmente todas as imagens que sobrepõem uma célula comum da grade, para uma data específica. Este mosaico espacial é reprojetado para o sistema de referência e todas as bandas são reamostradas para uma resolução espacial determinada, geralmente adota-se a reamostragem bilinear, exceto para bandas de qualidade, em que adota-se a reamostragem por vizinho mais próximo para evitar mudanças nos valores originais da imagem.
 
 .. figure:: ../../img/products/cube-builder.png
-    :alt: BDC Cube generation
+    :alt: Harmonize Brazil Cube generation
     :width: 720
     :figclass: align-center
     :name: fig:products-cube-builder
@@ -101,18 +101,18 @@ Composição Temporal
 ~~~~~~~~~~~~~~~~~~~
 
 
-Os Cubos de Dados BDC podem ser categorizados em 2 tipos, identidade e compostos no tempo. A natureza de um cubo de dados identidade consiste em disponibilizar as imagens na data de aquisição original do dado. Funções de composição temporal podem ser aplicadas sobre os cubos identidade para gerar cubos compostos no tempo, também chamados de regulares. Isto é feito para reduzir a dimensionalidade temporal do dado, uma vez que cubos identidade podem apresentar observações que não são equidistantes no tempo.
+Os Cubos de Dados Harmonize Brazil podem ser categorizados em 2 tipos, identidade e compostos no tempo. A natureza de um cubo de dados identidade consiste em disponibilizar as imagens na data de aquisição original do dado. Funções de composição temporal podem ser aplicadas sobre os cubos identidade para gerar cubos compostos no tempo, também chamados de regulares. Isto é feito para reduzir a dimensionalidade temporal do dado, uma vez que cubos identidade podem apresentar observações que não são equidistantes no tempo.
 
-3 funções de composição temporal estão disponíveis pelo BDC: ( *i* ) média, ( *ii* ) mediana, e ( *iii* ) stack. Estas funções operam sobre as observações válidas, ou seja, que não são detectadas como nuvens ou sombra de nuvens pelas bandas de qualidade, considerando a dimensão temporal e um passo de tempo, por exemplo 1 mês ou 16 dias. A composição temporal por média consiste em utilizar o valor médio obtido das observações. A composição temporal de Mediana consiste em utilizar o valor central das observações. A composição temporal por Stack consiste em uma abordagem de escolha de melhor pixel, em que a preferência destes é dada de acordo com a porção livre de nuvens e sombra de nuvens de sua imagem, por exemplo uma imagem com uma área de 5% coberta por nuvens é preferível para ser utilizada como imagem resultado ao ser comparada com uma imagem coberta 60% por nuvens. As funções de composição temporal mencionadas podem ser observadas na :numref:`Figura %s <fig:products-compositing-functions>`.
+3 funções de composição temporal estão disponíveis pelo Harmonize Brazil: ( *i* ) média, ( *ii* ) mediana, e ( *iii* ) stack. Estas funções operam sobre as observações válidas, ou seja, que não são detectadas como nuvens ou sombra de nuvens pelas bandas de qualidade, considerando a dimensão temporal e um passo de tempo, por exemplo 1 mês ou 16 dias. A composição temporal por média consiste em utilizar o valor médio obtido das observações. A composição temporal de Mediana consiste em utilizar o valor central das observações. A composição temporal por Stack consiste em uma abordagem de escolha de melhor pixel, em que a preferência destes é dada de acordo com a porção livre de nuvens e sombra de nuvens de sua imagem, por exemplo uma imagem com uma área de 5% coberta por nuvens é preferível para ser utilizada como imagem resultado ao ser comparada com uma imagem coberta 60% por nuvens. As funções de composição temporal mencionadas podem ser observadas na :numref:`Figura %s <fig:products-compositing-functions>`.
 
 
 .. figure:: ../../img/products/compositing-function.png
-    :alt: BDC Time Compositing Functions
+    :alt: Harmonize Brazil Time Compositing Functions
     :width: 720
     :figclass: align-center
     :name: fig:products-compositing-functions
 
-    Funções de Composição Temporal adotadas pelo BDC.
+    Funções de Composição Temporal adotadas pelo Harmonize Brazil.
 
 
-Após a aplicação da Função de Composição Temporal, o Brazil Data Cube Builder também cálcula os índices espectrais NDVI e EVI usando o cubo gerado. Além disso, para cubos compostos no tempo, 3 bandas extras são geradas para verificação das características da composição. Essas bandas são `CLEAROB`, `TOTALOB` e `PROVENANCE`, e indicam a quantidade de observações livre de nuvens e sombra de nuvens dentro do período composto, o número total de observações para cada pixel, dentro do período composto e a data de acquisição (em dia juliano) do pixel resultante da composição.
+Após a aplicação da Função de Composição Temporal, o Harmonize Brazil Builder também cálcula os índices espectrais NDVI e EVI usando o cubo gerado. Além disso, para cubos compostos no tempo, 3 bandas extras são geradas para verificação das características da composição. Essas bandas são `CLEAROB`, `TOTALOB` e `PROVENANCE`, e indicam a quantidade de observações livre de nuvens e sombra de nuvens dentro do período composto, o número total de observações para cada pixel, dentro do período composto e a data de acquisição (em dia juliano) do pixel resultante da composição.

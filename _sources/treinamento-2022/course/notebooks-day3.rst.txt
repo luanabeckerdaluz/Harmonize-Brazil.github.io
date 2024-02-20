@@ -1,5 +1,5 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
+    This file is part of Harmonize Brazil Documentation.
     Copyright 2022 INPE.
 
     This program is free software: you can redistribute it and/or modify
@@ -22,7 +22,7 @@ Notebooks R dos Serviços e Pacotes do dia 3
 Uso do serviços STAC em R
 +++++++++++++++++++++++++
 
-- https://www.kaggle.com/brazildatacube/bdc-stac-introduction-r/
+- https://www.kaggle.com/brazildatacube/Harmonize Brazil-stac-introduction-r/
 
 
 .. _course-treinamento-2022-day3-notebooks-wtss:
@@ -30,7 +30,7 @@ Uso do serviços STAC em R
 Uso do serviços WTSS em R
 +++++++++++++++++++++++++
 
-- https://www.kaggle.com/brazildatacube/bdc-wtss-introduction-r
+- https://www.kaggle.com/brazildatacube/Harmonize Brazil-wtss-introduction-r
 
 
 .. _course-treinamento-2022-day3-notebooks-wlts:
@@ -38,7 +38,7 @@ Uso do serviços WTSS em R
 Uso do serviço WLTS em R
 ++++++++++++++++++++++++
 
-- https://www.kaggle.com/brazildatacube/bdc-wlts-introduction-r/
+- https://www.kaggle.com/brazildatacube/Harmonize Brazil-wlts-introduction-r/
 
 
 .. _course-treinamento-2022-day3-notebooks-sits:

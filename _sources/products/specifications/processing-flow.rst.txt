@@ -1,27 +1,27 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020-2022 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024-2022 INPE.
 
-    Brazil Data Cube Documentation is free software; you can redistribute it and/or modify it
+    Harmonize Brazil Documentation is free software; you can redistribute it and/or modify it
     under the terms of the MIT License; see LICENSE file for more details.
 
 
 .. _processing_flow:
 
-BDC Processing Flow
+Harmonize Brazil Processing Flow
 -------------------
 
 
-Several procedures are performed to generate BDC Data cube collections. Based on that, :numref:`Figure %s <products:processing-flow>` illustrates a diagram containing the main procedures used to generate BDC data products.
+Several procedures are performed to generate Harmonize Harmonize Brazil collections. Based on that, :numref:`Figure %s <products:processing-flow>` illustrates a diagram containing the main procedures used to generate Harmonize Brazil data products.
 
 
-.. figure:: ../../img/products/bdc.png
-    :alt: BDC Image collection ingestion and Data Cube generation
+.. figure:: ../../img/products/Harmonize Brazil.png
+    :alt: Harmonize Brazil Image collection ingestion and Data Cube generation
     :width: 720
     :figclass: align-center
     :name: products:processing-flow
 
-    BDC Image collection ingestion and Data Cube generation.
+    Harmonize Brazil Image collection ingestion and Data Cube generation.
 
 
 Image Collection builder
@@ -54,7 +54,7 @@ In order to build the data cube collections, all input images must be at the sam
 
 
 .. figure:: ../../img/products/cube-builder.png
-    :alt: BDC Cube generation
+    :alt: Harmonize Brazil Cube generation
     :width: 720
     :figclass: align-center
     :name: products:cube-builder
@@ -66,9 +66,9 @@ Temporal Compositing
 ~~~~~~~~~~~~~~~~~~~~
 
 
-BDC Data Cube Collections can be categorized in two types, identity and composed. An identity data cube nature consists in using all available images from its sensors original acquisitions. Based on that, its temporal compositing function is identity. Temporal Compositing function can be used to generate regular series. This is performed by reducing the time dimension, which generates regularly spaced in time observations, here called composed data cubes.
+Harmonize Harmonize Brazil Collections can be categorized in two types, identity and composed. An identity data cube nature consists in using all available images from its sensors original acquisitions. Based on that, its temporal compositing function is identity. Temporal Compositing function can be used to generate regular series. This is performed by reducing the time dimension, which generates regularly spaced in time observations, here called composed data cubes.
 
-Three temporal compositing functions are being used in BDC: ( *i* ) Average (AVG), ( *ii* ) Median (MED), and ( *iii* ) Least Cloud Cover First (LCF). Considering the time dimension and a time step, e. g. monthly or 16 days, these temporal composition functions are applied on the identity data cubes, ideally on observations that are not detected as cloud or cloud shadow by the quality assessment band as considered in the following Table:
+Three temporal compositing functions are being used in Harmonize Brazil: ( *i* ) Average (AVG), ( *ii* ) Median (MED), and ( *iii* ) Least Cloud Cover First (LCF). Considering the time dimension and a time step, e. g. monthly or 16 days, these temporal composition functions are applied on the identity data cubes, ideally on observations that are not detected as cloud or cloud shadow by the quality assessment band as considered in the following Table:
 
 
 +------------------------------+--------------+-------------------+-----------------------+-----------------------+
@@ -86,19 +86,19 @@ The Average temporal composing consists in the average of the observed values. T
 
 
 .. figure:: ../../img/products/compositing-function.png
-    :alt: BDC Time Compositing Functions
+    :alt: Harmonize Brazil Time Compositing Functions
     :width: 720
     :figclass: align-center
     :name: products:compositing-functions
 
-    BDC Time Compositing Functions.
+    Harmonize Brazil Time Compositing Functions.
 
 
 .. note:: If there are only not clear observations values for a time step, the LCF temporal compositing outputs the value from the clearest image.
 
-.. note:: On Previouse versions of BDC, LCF was named STK (Stack). We adopt the LCF nomenclature to specify how values are selected on the compositing function.
+.. note:: On Previouse versions of Harmonize Brazil, LCF was named STK (Stack). We adopt the LCF nomenclature to specify how values are selected on the compositing function.
 
-After the time compositing function is applied, the Brazil Data Cube Builder also calculates the NDVI and EVI spectral indices using the spectral bands of the time composed data cube. Besides that, for the time composed data cubes, three provenance bands are also generated for tracking characteristics of the composite period. The data product bands are :doc:`CLEAROB <./bands/CLEAROB>`, :doc:`TOTALOB <./bands/TOTALOB>` and :doc:`PROVENANCE <./bands/PROVENANCE>`.
+After the time compositing function is applied, the Harmonize Brazil Builder also calculates the NDVI and EVI spectral indices using the spectral bands of the time composed data cube. Besides that, for the time composed data cubes, three provenance bands are also generated for tracking characteristics of the composite period. The data product bands are :doc:`CLEAROB <./bands/CLEAROB>`, :doc:`TOTALOB <./bands/TOTALOB>` and :doc:`PROVENANCE <./bands/PROVENANCE>`.
 
 
 .. toctree::

@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020-2023 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024-2023 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -14,11 +14,11 @@
     along with this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
 
 
-BDC Input Data
+Harmonize Brazil Input Data
 --------------
 
 
-INPE pioneered the free provision of medium resolution satellite data, releasing images at no cost from the second *China-Brazil Earth Resources Satellite* (CBERS-2) :cite:`banskota:2014`. The adoption of this policy encouraged the *United States Geological Survey* (USGS) to make Landsat data available in 2008 :cite:`woodcock:2008`, which resulted in a greater amount of access and use of orbital images :cite:`wulder:2012`. Nowadays, Landsat program provides the most faraway orbital image series, providing observations since 1972 and is freely available. Also the European Copernicus program made available the access to all users for Sentinel data, such as Sentinel-2A and Sentinel-2B :cite:`berger:2012`. The free data approach persists to recent days with free data availability from Landsat-8, Sentinel-2, CBERS-4, Terra, Aqua and more. Images from the Landsat-8/OLI, Sentinel-2A/MSI, Sentinel-2B/MSI, CBERS-4/WFI, CBERS-4/MUX, CBERS-4A/WFI, Terra/MODIS and Aqua/MODIS are used as input data in the BDC products.
+INPE pioneered the free provision of medium resolution satellite data, releasing images at no cost from the second *China-Brazil Earth Resources Satellite* (CBERS-2) :cite:`banskota:2014`. The adoption of this policy encouraged the *United States Geological Survey* (USGS) to make Landsat data available in 2008 :cite:`woodcock:2008`, which resulted in a greater amount of access and use of orbital images :cite:`wulder:2012`. Nowadays, Landsat program provides the most faraway orbital image series, providing observations since 1972 and is freely available. Also the European Copernicus program made available the access to all users for Sentinel data, such as Sentinel-2A and Sentinel-2B :cite:`berger:2012`. The free data approach persists to recent days with free data availability from Landsat-8, Sentinel-2, CBERS-4, Terra, Aqua and more. Images from the Landsat-8/OLI, Sentinel-2A/MSI, Sentinel-2B/MSI, CBERS-4/WFI, CBERS-4/MUX, CBERS-4A/WFI, Terra/MODIS and Aqua/MODIS are used as input data in the Harmonize Brazil products.
 
 
 CBERS-4
@@ -98,7 +98,7 @@ CBERS-4A/WFI (and other products) are freely distributed by INPE. The scenes are
 Landsat-8
 +++++++++
 
-In the late 60s, NASA (National Aeronautics and Space Administration) started the Landsat program to collect data on renewable and non-renewable natural resources on Earth's surface. Currently, the Landsat program has two operating platforms, the Landsat-7 (in precarious conditions) and Landsat-8, while Landsat-9 has been authorized and is proceeding towards a December 2020 launch :cite:`wulder:2019`. Landsat-8 was launched in February of 2013. The satellite orbits the Earth in near-polar, sun-synchronous orbit, following the World Reference System (WRS-2) at an altitude of approximately 705 km. The satellite carries two sensors: the OLI (Operational Land Imager) sensor and the TIRS (Thermal Infrared Sensor) sensor, which are co-registered :cite:`usgs:2020`. Landsat-8/OLI presents spatial resolution of 30m, regarding bands of the visible, 15m for panchromatic band and 100m for the thermal bands (TIRS). The imaged scenes have 185 km east-west and present temporal resolution of 16 days.
+In the late 60s, NASA (National Aeronautics and Space Administration) started the Landsat program to collect data on renewable and non-renewable natural resources on Earth's surface. Currently, the Landsat program has two operating platforms, the Landsat-7 (in precarious conditions) and Landsat-8, while Landsat-9 has been authorized and is proceeding towards a December 2024 launch :cite:`wulder:2019`. Landsat-8 was launched in February of 2013. The satellite orbits the Earth in near-polar, sun-synchronous orbit, following the World Reference System (WRS-2) at an altitude of approximately 705 km. The satellite carries two sensors: the OLI (Operational Land Imager) sensor and the TIRS (Thermal Infrared Sensor) sensor, which are co-registered :cite:`usgs:2024`. Landsat-8/OLI presents spatial resolution of 30m, regarding bands of the visible, 15m for panchromatic band and 100m for the thermal bands (TIRS). The imaged scenes have 185 km east-west and present temporal resolution of 16 days.
 
 
 Digital Number (DN) products are freely distributed by USGS in a tiered structure called *Collections*. *Collection-1* includes Level-1 Precision and Terrain (L1TP) corrected data, which is radiometrically calibrated and orthorectified. The products are provided in the UTM projection and can also be ordered as surface reflectance through USGS ESPA interface, which uses the Landsat Surface Reflectance Code (LaSRC) to process the images :cite:`usgs:2021`. Landsat-8 main characteristics are:

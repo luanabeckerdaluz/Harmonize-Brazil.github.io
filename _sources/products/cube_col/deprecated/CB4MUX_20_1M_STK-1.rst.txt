@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020-2023 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024-2023 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22,10 +22,10 @@ CB4MUX_20_1M_STK-1
 
 .. warning::
 
-    This product is being deprecated and will soon not be available anymore. CB4MUX_20_1M_STK-1 is being replaced by :doc:`CB4MUX-2M-1 <./../CB4MUX-2M-1>`. This new product will be generated using BDC GRID newest version (version 2).
+    This product is being deprecated and will soon not be available anymore. CB4MUX_20_1M_STK-1 is being replaced by :doc:`CB4MUX-2M-1 <./../CB4MUX-2M-1>`. This new product will be generated using Harmonize Brazil GRID newest version (version 2).
     The CB4MUX_20_1M_STK-1 product will be available until May 31, 2023.
 
-    Brazil Data Cube Team.
+    Harmonize Brazil Team.
 
 The CB4MUX_20_1M_STK-1 product contains MUX surface reflectance at full spatial resolution (20m) and 1 month Temporal Compositing applied over the CBERS-4/MUX data considering the :doc:`CMASK <../../../specifications/bands/CMASK>` cloud mask. The following Table lists the CB4MUX_20_1M_STK-1 product characteristics:
 

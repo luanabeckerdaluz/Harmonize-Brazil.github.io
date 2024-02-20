@@ -1,6 +1,6 @@
 ..
-    This file is part of Brazil Data Cube Documentation.
-    Copyright 2020 INPE.
+    This file is part of Harmonize Brazil Documentation.
+    Copyright 2024 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@ Introdução
 ----------
 
 
-.. image:: ../../img/worcap-2020/intro-geo/geometries.svg
+.. image:: ../../img/worcap-2024/intro-geo/geometries.svg
     :alt: Tipos Geométricos
     :height: 75
     :align: right
@@ -45,13 +45,13 @@ Além dos atributos alfanuméricos, uma feição é descrita por um ou mais **at
 A :numref:`Tabela %s <tipos-geometricos:exemplos>` apresenta alguns tipos de objetos geográficos representados por feições com representações geométricas de pontos (hidrelétricas e termoelétricas), linhas (logradouros) e polígonos (municípios brasileiros).
 
 
-.. |geom-pts| image:: ../../img/worcap-2020/intro-geo/geom-pts.png
+.. |geom-pts| image:: ../../img/worcap-2024/intro-geo/geom-pts.png
 
 
-.. |geom-lins| image:: ../../img/worcap-2020/intro-geo/geom-lns.png
+.. |geom-lins| image:: ../../img/worcap-2024/intro-geo/geom-lns.png
 
 
-.. |geom-pol| image:: ../../img/worcap-2020/intro-geo/geom-pols.png
+.. |geom-pol| image:: ../../img/worcap-2024/intro-geo/geom-pols.png
 
 
 .. table:: Representação de feições geográficas através de objetos geométricos.
@@ -70,7 +70,7 @@ A :numref:`Tabela %s <tipos-geometricos:exemplos>` apresenta alguns tipos de obj
 A :numref:`Figura %s <tipos-geometricos:feature-collection>` ilustra o esquema de uma coleção de feições, onde podemos observar os atributos alfanuméricos e geométricos.
 
 
-.. figure:: ../../img/worcap-2020/intro-geo/feature-collection-uf.png
+.. figure:: ../../img/worcap-2024/intro-geo/feature-collection-uf.png
     :alt: Coleção de Feições (Feature Collection)
     :width: 480
     :figclass: align-center
@@ -85,7 +85,7 @@ As entidades codificados como dados matriciais, também chamadas de **raster** o
 A :numref:`Figura %s <tipo-raster:img-cbers4>` apresenta uma imagem do satélite CBERS-4 sensor WFI, um dado matricial em que cada célula, representa uma área de 64 metros da superfície terrestre e o valor de intensidade cada célula indica uma aproximação da cor refletida por essa superfície.
 
 
-.. figure:: ../../img/worcap-2020/intro-geo/imagem-cbers4.png
+.. figure:: ../../img/worcap-2024/intro-geo/imagem-cbers4.png
     :alt: Imagem do satélite CBERS-4 sensor WFI
     :width: 480
     :figclass: align-center
