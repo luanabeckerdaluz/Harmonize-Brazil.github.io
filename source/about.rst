@@ -1,0 +1,95 @@
+About
+=====
+
+About
+-----
+
+This work is part of the `Harmonize Project <https://www.harmonize-tools.org/>`_. Harmonizing multi-scale spatiotemporal data for health in climate change hotspots. Harmonize is a project in partnership with the Health and Climate Observatory and several international partners, including the Barcelona Supercomputing Center (BSC). The project’s objective is to collect, organize and analyze multi-scale spatiotemporal data for health in climate hotspots.
+
+The Earth Observation Data Cube tuned for Health Response Systems (EODCtHRS) component is based on the integration and interoperability between specific sets of attention data (climate reanalysis, forecast, socioeconomic, demographic, health, disease surveillance data and drone images) and digital infrastructure of the Brazil Data Cube (BDC) Project of the National Institute for Space Research (INPE), in particular with the Earth Observation datasets of Brazil.
+
+This work is supported by the Wellcome Trust grant number 224694/Z/21/Z.
+
+
+Team
+----
+
+.. figure:: ../source/img/team1.png
+   :align: center
+   :width: 90%
+   :figclass: align-center
+
+.. figure:: ../source/img/team2.png
+   :align: center
+   :width: 90%
+   :figclass: align-center
+
+
+Connect with us
+---------------
+
+**Adeline Maciel:** |Gmail| |Linkedin| |Orcid|
+
+.. |Gmail| image:: https://img.shields.io/badge/-Email-c14438?style=flat&logo=Gmail&logoColor=white
+   :target: mailto:adelinemaciel22@gmail.com
+
+.. |Linkedin| image:: https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white
+   :target: https://www.linkedin.com/in/adelinemarinhomaciel/
+
+.. |Orcid| image:: https://img.shields.io/badge/-Orcid-green?style=flat&logo=Orcid&logoColor=white
+   :target: https://orcid.org/0000-0002-1467-6488
+
+**Marcos Rodrigues:** |Gmail2| |Linkedin2| |Orcid2|
+
+.. |Gmail2| image:: https://img.shields.io/badge/-Email-c14438?style=flat&logo=Gmail&logoColor=white
+   :target: mailto:marcos.mlr@gmail.com
+
+.. |Linkedin2| image:: https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white
+   :target: https://www.linkedin.com/in/marcos-rodrigues-3a59a38/
+
+.. |Orcid2| image:: https://img.shields.io/badge/-Orcid-green?style=flat&logo=Orcid&logoColor=white
+   :target: https://orcid.org/0000-0002-9199-6928
+
+**Luana Becker da Luz:** |Gmail3| |Linkedin3| |Orcid3|
+
+.. |Gmail3| image:: https://img.shields.io/badge/-Email-c14438?style=flat&logo=Gmail&logoColor=white
+   :target: mailto:luanabeckerdaluz@gmail.com
+
+.. |Linkedin3| image:: https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white
+   :target: https://www.linkedin.com/in/leobeckerdaluz/
+
+.. |Orcid3| image:: https://img.shields.io/badge/-Orcid-green?style=flat&logo=Orcid&logoColor=white
+   :target: https://orcid.org/0000-0003-2535-7658
+
+**Yuri Domaradzki:** |Gmail4| |Linkedin4| |Orcid4|
+
+.. |Gmail4| image:: https://img.shields.io/badge/-Email-c14438?style=flat&logo=Gmail&logoColor=white
+   :target: mailto:yuridomaradzki@gmail.com
+
+.. |Linkedin4| image:: https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white
+   :target: https://www.linkedin.com/in/yuri-domaradzki/
+
+.. |Orcid4| image:: https://img.shields.io/badge/-Orcid-green?style=flat&logo=Orcid&logoColor=white
+   :target: https://orcid.org/0009-0007-2829-4345
+
+**Gabriel Sansigolo:** |Gmail5| |Linkedin5| |Orcid5|
+
+.. |Gmail5| image:: https://img.shields.io/badge/-Email-c14438?style=flat&logo=Gmail&logoColor=white
+   :target: mailto:gabrielsansigolo@gmail.com
+
+.. |Linkedin5| image:: https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white
+   :target: https://www.linkedin.com/in/gabriel-sansigolo-9ab7b0ab/
+
+.. |Orcid5| image:: https://img.shields.io/badge/-Orcid-green?style=flat&logo=Orcid&logoColor=white
+   :target: https://orcid.org/0000-0003-0789-5858
+
+**Ana Paula Dal'Asta:** |Gmail6| |Linkedin6| |Orcid6|
+
+.. |Gmail6| image:: https://img.shields.io/badge/-Email-c14438?style=flat&logo=Gmail&logoColor=white
+   :target: mailto:apdalasta@gmail.com
+
+.. |Linkedin6| image:: https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white
+   :target: https://www.linkedin.com/in/ana-paula-dal-asta-08b123297/
+
+.. |Orcid6| image:: https://img.shields.io/badge/-Orcid-green?style=flat&logo=Orcid&logoColor=white
+   :target: https://orcid.org/0000-0002-1286-9067

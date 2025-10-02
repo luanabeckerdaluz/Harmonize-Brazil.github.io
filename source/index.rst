@@ -1,0 +1,53 @@
+.. Tutoriais_Harmonize documentation master file, created by
+   sphinx-quickstart on Thu Mar 20 11:47:16 2025.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Harmonize Project: Earth Observation Data Cube tuned for Health Response Systems (EODCtHRS)
+===========================================================================================
+
+HARMONIZE collates existing multi-source climate, environmental, socioeconomic and health data, and collects new longitudinal data using drone 
+technology and low-cost weather sensors, to calibrate and downscale Earth Observation, climate reanalysis and seasonal forecast datasets in areas
+most relevant in Latin America and the Caribbean for disease transmission.
+
+.. figure:: ../source/img/hotspots.png
+   :align: center
+   :width: 90%
+   :figclass: align-center
+
+   **Figure 1 – Harmonize Project hotspots.**
+
+In the Harmonize, the Earth Observation Data Cube tuned for Health Response Systems (EODCtHRS) is a technical-scientific proposal termed HARMONIZE Instance 
+composed of back/front-end solutions developed using free and open-source software for integration and interoperability between specific 
+sets of health, environmental and climate data and the digital infrastructure of the Brazil Data Cube (BDC) project of the National Institute 
+for Space Research (INPE). 
+
+Here we introduce the Data Collection 3 available in the HARMONIZE Instance Beta version. This collection integrates health and climate data and drone imagery 
+for the hotspots in Brazil - “Baixo Tocantins” (lower Tocantins river basin) in Pará state and “Semiárido da Paraíba” (semi-arid region in the Paraíba state). 
+These areas are particularly vulnerable to climate change. Baixo Tocantins is located in the humid Amazon region, which has faced 
+increased flooding and deforestation pressure in recent years. Sertão da Paraíba is located in a semi-arid region that often faces water scarcity and periodic 
+droughts, which increases the risk of food insecurity and infectious disease outbreaks.
+
+EODCtHRS proposal is presented in `this paper <http://mtc-m16c.sid.inpe.br/col/sid.inpe.br/mtc-m16c/2023/12.18.13.18/doc/thisInformationItemHomePage.html>`_.
+
+For more information on the Harmonize Project, please refer to `this page <https://www.harmonize-tools.org/>`_.
+
+The official repository is available at HarmonizeGitHub_. The repository features a gallery of Jupyter Notebooks based on data and technologies from EODCtHRS hosted 
+at the Brazilian National Institute for Space Research (INPE).
+
+.. _HarmonizeGitHub: https://github.com/Harmonize-Brazil
+
+
+- `FOSS4G 2024 <https://brazil-data-cube.github.io/foss4g-2024.html>`_
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   about
+   data_collection/index
+   packages
+   infrastructure/index
+   code-gallery
+   tutorials/index
+   References
