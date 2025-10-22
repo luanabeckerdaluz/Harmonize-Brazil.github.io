@@ -1,68 +1,51 @@
-..
-    This file is part of Harmonize Brazil Documentation.
-    Copyright 2024-2023 INPE.
+Harmonize Brazil
+================
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-    GNU General Public License for more details.
-    You should have received a copy of the GNU General Public License
-    along with this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
+Earth Observation Data Cube tuned for Health Response Systems (EODCtHRS)
+------------------------------------------------------------------------
+
+HARMONIZE collates existing multi-source climate, environmental, socioeconomic and health data, and collects new longitudinal data using drone 
+technology and low-cost weather sensors, to calibrate and downscale Earth Observation, climate reanalysis and seasonal forecast datasets in areas
+most relevant in Latin America and the Caribbean for disease transmission.
+
+.. figure:: ../source/img/hotspots.png
+   :align: center
+   :width: 90%
+   :figclass: align-center
+
+   **Figure 1 – Harmonize Project hotspots.**
+
+In the Harmonize, the Earth Observation Data Cube tuned for Health Response Systems (EODCtHRS) is a technical-scientific proposal termed HARMONIZE Instance 
+composed of back/front-end solutions developed using free and open-source software for integration and interoperability between specific 
+sets of health, environmental and climate data and the digital infrastructure of the Brazil Data Cube (BDC) project of the National Institute 
+for Space Research (INPE). 
+
+Here we introduce the Data Collection 3 available in the HARMONIZE Instance Beta version. This collection integrates health and climate data and drone imagery 
+for the hotspots in Brazil - “Baixo Tocantins” (lower Tocantins river basin) in Pará state and “Semiárido da Paraíba” (semi-arid region in the Paraíba state). 
+These areas are particularly vulnerable to climate change. Baixo Tocantins is located in the humid Amazon region, which has faced 
+increased flooding and deforestation pressure in recent years. Sertão da Paraíba is located in a semi-arid region that often faces water scarcity and periodic 
+droughts, which increases the risk of food insecurity and infectious disease outbreaks.
+
+EODCtHRS proposal is presented in `this paper <http://mtc-m16c.sid.inpe.br/col/sid.inpe.br/mtc-m16c/2023/12.18.13.18/doc/thisInformationItemHomePage.html>`_.
+
+For more information on the Harmonize Project, please refer to `this page <https://www.harmonize-tools.org/>`_.
+
+The official repository is available at HarmonizeGitHub_. The repository features a gallery of Jupyter Notebooks based on data and technologies from EODCtHRS hosted 
+at the Brazilian National Institute for Space Research (INPE).
+
+.. _HarmonizeGitHub: https://github.com/Harmonize-Brazil
 
 
-Harmonize Brazil Documentation
-==============================
-
-
-Welcome to the **Harmonize Brazil** project!
-
-
-.. toctree::
-    :hidden:
-
-    self
-
-
-.. toctree::
-    :maxdepth: 1
-    :caption: Documentation:
-
-    products
-    applications
-    specifications
-
-
-
-.. toctree::
-    :maxdepth: 1
-    :caption: Tutorials:
-
-    jornada-merc-2023
-    worcap-2023
-    treinamento-2023
-    sbsr-2023
-    treinamento-2022
-    worcap-2021
-    ibge-2021
-    sbsr-2021
-    worcap-2024
-    datascience-2024
-
+- `FOSS4G 2024 <https://brazil-data-cube.github.io/foss4g-2024.html>`_
 
 .. toctree::
-    :maxdepth: 1
-    :caption: References
+   :maxdepth: 2
+   :caption: Contents:
 
-    references
-
-
-.. toctree::
-    :maxdepth: 1
-    :caption: General Information:
-
-    contact
-    license
+   about
+   data_collection/index
+   packages
+   infrastructure/index
+   code-gallery
+   tutoriais
+   references

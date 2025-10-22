@@ -1,0 +1,9 @@
+Computational Infrastructure
+============================
+
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
+
+    ./infra
+    ./deploy-locally

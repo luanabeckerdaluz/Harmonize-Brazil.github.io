@@ -1,24 +1,14 @@
-..
-    This file is part of Harmonize Brazil Documentation.
-    Copyright 2024-2023 INPE.
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-    GNU General Public License for more details.
-    You should have received a copy of the GNU General Public License
-    along with this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
-
-
-.. _cap_references:
-
 References
 ==========
 
+References produced by the team:
 
-.. bibliography::
-    :cited:
+MACIEL, A. M.; RODRIGUES, M. L.; NUNES, Y. D. M.; LUZ, L. B.; DAL’ASTA, A. P.; QUEIROZ, G. R.; FERREIRA, K. R.; SANT'ANNA, S. J. S.; ESCADA, M. I. S.; VITOR, A. C. R.; BARCELLOS, C.; CODECO, C. T.; 
+XAVIER, D. R.; MATOS, V. P.; SALDANHA, R. F.; ANJOS, A. E.; ZIOTI, F.; SANSIGOLO, G.; COSTA, R. W.; MARUJO, R. F. B.; VINHAS, L.; LOWE, R.; MONTEIRO, A. M. V. The HARMONIZE Project and the EODCtHRS 
+Architecture: An Earth Observation Data Cube tuned for Health Response Systems. XXIV Brazilian Symposium on GeoInformatics, 2023, São José dos Campos - SP. Proceedings XXIV GEOINFO 2023. 
+São José dos Campos, SP: MCTI/INPE, 2023. p. 122-133. Available: http://mtc-m16c.sid.inpe.br/col/sid.inpe.br/mtc-m16c/2023/12.18.13.18/doc/Maciel_TheHarmonize.pdf
+
+MACIEL, A. M.; RODRIGUES, M. L.; NUNES, Y. D. M.; LUZ, L. B.; DAL’ASTA, A. P.; QUEIROZ, G. R.; FERREIRA, K. R.; SANT'ANNA, S. J. S.; ESCADA, M. I. S.; VITOR, A. C. R.; BARCELLOS, C.; CODECO, C. T.; 
+XAVIER, D. R.; MATOS, V. P.; SALDANHA, R. F.; ANJOS, A. E.; ZIOTI, F.; SANSIGOLO, G.; COSTA, R. W.; MARUJO, R. F. B.; VINHAS, L.; LOWE, R.; MONTEIRO, A. M. V. Integrating Earth Observation Data for 
+Enhanced Health Response Systems: The EODCtHRS component of HARMONIZE Project. Free and Open Source Software for Geospatial (FOSS4G), 2024, Belém - PA. Scheduled for December 6, 2024.  
+Available: https://talks.osgeo.org/foss4g-2024/talk/XGBABQ
